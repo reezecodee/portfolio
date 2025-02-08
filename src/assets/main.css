@@ -2,7 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     background-color: #000000;
     @apply text-white;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.plus-jakarta-sans {
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.plus-jakarta-sans-text {
+    font-family: "Plus Jakarta Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
