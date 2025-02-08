@@ -1,7 +1,7 @@
 <template>
     <MainLayout>
         <h1
-            class="text-4xl mb-5 text-start font-extrabold bg-gradient-to-b from-gray-100 to-gray-400 bg-clip-text text-transparent p-1 plus-jakarta-sans-heading">
+            class="text-4xl mb-5 text-start font-extrabold bg-gradient-to-b from-gray-100 to-gray-400 bg-clip-text text-transparent pb-1 plus-jakarta-sans-heading">
             Hello, I'am Reeze...</h1>
         <p class="mb-7 text-start">I am someone who aspires to become a Backend Developer with the goal of becoming a
             skilled developer. Usually, I build web applications using technologies like Laravel, Livewire, VueJS, or
@@ -14,11 +14,11 @@
         </p>
         <h2
             class="text-2xl mb-5 text-start font-extrabold bg-gradient-to-b from-gray-100 to-gray-300 bg-clip-text text-transparent p-1 plus-jakarta-sans-heading">
-            Skill sets</h2>
+            Skill Sets</h2>
         <SkillSets />
         <h2
             class="text-2xl mb-5 text-start font-extrabold bg-gradient-to-b from-gray-100 to-gray-300 bg-clip-text text-transparent p-1 plus-jakarta-sans-heading">
-            Let's get in touch</h2>
+            Let's Get in Touch</h2>
         <SocialMedia />
     </MainLayout>
 </template>
