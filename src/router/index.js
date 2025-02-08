@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import AboutView from "@/views/AboutView.vue";
-import ProjectsView from "@/views/ProjectsView.vue";
+import ProjectView from "@/views/ProjectsView.vue";
 import BlogsView from "@/views/BlogsView.vue";
 
 const router = createRouter({
@@ -17,7 +17,7 @@ const router = createRouter({
     {
       path: "/my-projects",
       name: "projects",
-      component: ProjectsView,
+      component: ProjectView,
       meta: {
         title: "Projects - My Portfolio",
       },
