@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="flex justify-center mb-7 gap-3 text-xs">
+    <div class="flex flex-wrap justify-center mb-7 gap-3 text-xs">
         <button
             class="p-3 bg-slate-300/70 hover:bg-slate-300 dark:bg-slate-800/70 dark:hover:bg-slate-800 duration-200 backdrop-blur-sm rounded-lg flex items-center gap-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"

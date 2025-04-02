@@ -8,11 +8,11 @@
         <div class="flex flex-wrap gap-4 mb-7">
             <RouterLink to="">
                 <div
-                    class="w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/siskomdig.jpg" alt="Desa Serang Community" class="w-full h-32 object-fill">
+                    class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
+                    <img src="/projects/siskomdig.jpg" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
-                        <h3 class="font-bold text-base mb-1">SISKOMDIG</h3>
-                        <p class="text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang khusus untuk komunitas digital
+                        <h3 class="font-bold text-lg md:text-base mb-1">SISKOMDIG</h3>
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang khusus untuk komunitas digital
                             Desa
                             Serang, Tasikmalaya.</p>
                         <div class="flex justify-end items-center gap-2">
@@ -54,11 +54,11 @@
             </RouterLink>
             <RouterLink to="">
                 <div
-                    class="w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/situgas.jpg" alt="Desa Serang Community" class="w-full h-32 object-fill">
+                    class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
+                    <img src="/projects/situgas.jpg" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
-                        <h3 class="font-bold text-base mb-1">SITUGAS</h3>
-                        <p class="text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang khusus untuk memonitoring
+                        <h3 class="font-bold text-lg md:text-base mb-1">SITUGAS</h3>
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang khusus untuk memonitoring
                             penugasan siswa di MTs BPI Baturompe</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -112,12 +112,12 @@
             </RouterLink>
             <RouterLink to="">
                 <div
-                    class="w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
+                    class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
                     <img src="/projects/sig-desa-kaputihan.jpg" alt="Desa Serang Community"
-                        class="w-full h-32 object-fill">
+                        class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
-                        <h3 class="font-bold text-base mb-1">SIG Desa Kaputihan</h3>
-                        <p class="text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang khusus untuk mengelola titik
+                        <h3 class="font-bold text-lg md:text-base mb-1">SIG Desa Kaputihan</h3>
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang khusus untuk mengelola titik
                             lokasi dan informasi bangunan di Desa Kaputihan</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -165,11 +165,11 @@
             </RouterLink>
             <RouterLink to="">
                 <div
-                    class="w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/app-islami.png" alt="Desa Serang Community" class="w-full h-32 object-fill">
+                    class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
+                    <img src="/projects/app-islami.png" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
-                        <h3 class="font-bold text-base mb-1">App Islami</h3>
-                        <p class="text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi islami untuk melihat jadwal sholat, baca
+                        <h3 class="font-bold text-lg md:text-base mb-1">App Islami</h3>
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi islami untuk melihat jadwal sholat, baca
                             Al-Qur'an, asma'ul husna, do'a harian, dan niat sholat</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -194,11 +194,11 @@
             </RouterLink>
             <RouterLink to="">
                 <div
-                    class="w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/e-perpus-smk.png" alt="Desa Serang Community" class="w-full h-32 object-fill">
+                    class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
+                    <img src="/projects/e-perpus-smk.png" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
-                        <h3 class="font-bold text-base mb-1">E-Perpustakaan SMK</h3>
-                        <p class="text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi perpustakaan untuk memonitoring peminjaman buku
+                        <h3 class="font-bold text-lg md:text-base mb-1">E-Perpustakaan SMK</h3>
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi perpustakaan untuk memonitoring peminjaman buku
                             dan kelola rak buku</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -233,11 +233,11 @@
         <div class="flex flex-wrap gap-4 mb-7">
             <RouterLink to="">
                 <div
-                    class="w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/arumi.png" alt="Desa Serang Community" class="w-full h-32 object-fill">
+                    class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
+                    <img src="/projects/arumi.png" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
-                        <h3 class="font-bold text-base mb-1">Arumi</h3>
-                        <p class="text-xs text-gray-800 dark:text-gray-300 mb-3">Association rules dengan algoritma Apriori untuk membantu
+                        <h3 class="font-bold text-lg md:text-base mb-1">Arumi</h3>
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Association rules dengan algoritma Apriori untuk membantu
                             customer dalam melihat rekomendasi produk</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
