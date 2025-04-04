@@ -11,7 +11,7 @@
                     </div>
                 </router-link>
                 <div id="toggleTarget" :class="isSidebarOpen ? 'block' : 'hidden'"
-                    class="bg-gray-900 rounded-md md:rounded-none py-4 px-5 absolute right-6 top-20 md:bg-transparent md:static md:py-0 md:px-0 md:block w-1/2 md:w-auto">
+                    class="bg-gray-100 dark:bg-gray-900 rounded-md md:rounded-none py-4 px-5 absolute right-6 top-20 md:bg-transparent md:dark:bg-transparent md:static md:py-0 md:px-0 md:block w-1/2 md:w-auto">
                     <router-link v-for="(link, index) in links" :key="index" :to="link.link"
                         class="font-semibold ml-0 my-6 md:my-0 md:ml-8 hover:text-black dark:hover:text-white block md:inline"
                         :class="{ 'text-black dark:text-white': $route.path === link.link, 'text-gray-700 dark:text-gray-400': $route.path !== link.link }">{{
@@ -58,6 +58,10 @@ const links = ref([
     {
         title: 'Blogs',
         link: '/blogs'
+    },
+    {
+        title: 'Guestbook',
+        link: '/guestbook'
     }
 ])
 

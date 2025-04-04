@@ -2,9 +2,10 @@ import { createRouter, createWebHistory } from "vue-router";
 import AboutView from "@/views/AboutView.vue";
 import ProjectView from "@/views/ProjectView.vue";
 import BlogsView from "@/views/BlogsView.vue";
+import GuestBookView from "@/views/GuestBookView.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL || '/'),
+  history: createWebHistory(import.meta.env.BASE_URL || "/"),
   routes: [
     {
       path: "/",
@@ -28,6 +29,14 @@ const router = createRouter({
       component: BlogsView,
       meta: {
         title: "Blogs - My Portfolio",
+      },
+    },
+    {
+      path: "/guestbook",
+      name: "guestbook",
+      component: GuestBookView,
+      meta: {
+        title: "Guestbook - My Portfolio",
       },
     },
   ],

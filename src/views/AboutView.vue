@@ -18,7 +18,7 @@
         <SkillSets />
         <h2
             class="text-2xl mb-5 text-start font-extrabold p-1 plus-jakarta-sans-heading">
-            Get in Touch</h2>
+            Get in Touch with Me</h2>
         <SocialMedia />
     </MainLayout>
 </template>
