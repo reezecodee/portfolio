@@ -6,6 +6,10 @@ html {
     scrollbar-width: none;
 }
 
+* {
+    z-index: 6;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }

@@ -3,7 +3,6 @@ import AboutView from "@/views/AboutView.vue";
 import ProjectView from "@/views/ProjectView.vue";
 import BlogsView from "@/views/BlogsView.vue";
 import GuestBookView from "@/views/GuestBookView.vue";
-import TestView from "@/views/TestView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL || "/"),
@@ -38,14 +37,6 @@ const router = createRouter({
       component: GuestBookView,
       meta: {
         title: "Guestbook - My Portfolio",
-      },
-    },
-    {
-      path: "/test",
-      name: "test",
-      component: TestView,
-      meta: {
-        title: "Test - My Portfolio",
       },
     },
   ],

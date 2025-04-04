@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import { storeToRefs } from "pinia";
 import { useThemeStore } from "./stores/useThemeStore.js";
 
