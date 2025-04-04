@@ -1,5 +1,5 @@
 <template>
-    <Navbar></Navbar>
+    <Navbar />
     <div class="mt-28 plus-jakarta-sans-text">
         <div class="container mx-auto px-4 md:px-8 text-justify md:text-start min-h-screen">
             <div class="flex justify-center">
