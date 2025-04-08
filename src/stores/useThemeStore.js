@@ -29,6 +29,7 @@ export const useThemeStore = defineStore("theme", {
         document.body.classList.remove("bg-white");
         document.body.classList.add("bg-black");
       }
+
       if (!isDarkMode) {
         setTimeout(() => {
           document.body.classList.remove("bg-black");

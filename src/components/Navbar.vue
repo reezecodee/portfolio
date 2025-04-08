@@ -17,8 +17,7 @@
                         :class="{ 'text-black dark:text-white': $route.path === link.link, 'text-gray-700 dark:text-gray-400': $route.path !== link.link }">{{
                             link.title }}</router-link>
                     <button @click="toggleDarkMode"
-                        class="text-black dark:text-white font-semibold ml-0 my-6 md:my-0 md:ml-8 block md:inline"
-                        id="theme-toggle">
+                        class="text-black dark:text-white font-semibold ml-0 my-6 md:my-0 md:ml-8 block md:inline" id="theme-toggle">
                         <svg v-if="theme === 'dark'" class="inline-block align-middle" width="19" height="19"
                             viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -75,13 +74,11 @@ const isDarkMode = ref(theme.value === 'dark' ? true : false)
 const animationActive = ref(false);
 
 const toggleDarkMode = (event) => {
+    const button = document.getElementById('theme-toggle');
+    button.disabled = true;
     animationActive.value = true;
 
     isDarkMode.value = !isDarkMode.value;
-
-    setTimeout(() => {
-        animationActive.value = false;
-    }, 1000);
 
     store.setAnimation({
         circlePositionX: event.clientX,
@@ -89,6 +86,11 @@ const toggleDarkMode = (event) => {
         isDarkMode: isDarkMode.value,
         animationActive: animationActive.value
     });
+
+    setTimeout(() => {
+        isDarkMode.value ? button.classList.add('dark:text-white') : button.classList.remove('dark:text-white')
+        button.disabled = false;
+    }, 500);
 };
 
 onMounted(() => {
