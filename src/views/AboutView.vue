@@ -16,7 +16,7 @@
         </p>
         <h2
             class="text-2xl mb-5 text-start font-extrabold p-1 plus-jakarta-sans-heading">
-            Skill Sets</h2>
+            Tools & Technologies</h2>
         <SkillSets />
         <h2
             class="text-2xl mb-5 text-start font-extrabold p-1 plus-jakarta-sans-heading">

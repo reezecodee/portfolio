@@ -5,8 +5,8 @@
             <div class="py-4 px-4 md:px-0 max-w-none md:max-w-3xl flex justify-between items-center container mx-auto">
                 <router-link to="/">
                     <div class="flex justify-start items-center text-black dark:text-white gap-3">
-                        <img src="https://avatars.githubusercontent.com/u/159593076?v=4" width="35"
-                            class="rounded-full border-2 border-black dark:border-white" alt="" srcset="">
+                        <img src="https://avatars.githubusercontent.com/u/159593076?v=4" 
+                            class="rounded-full border-2 border-black dark:border-white w-12 md:w-10" alt="" srcset="">
                         <span class="text-lg font-bold md:font-medium">Reeze</span>
                     </div>
                 </router-link>
@@ -53,9 +53,7 @@ const toggleSidebar = () => {
 };
 
 const handleClickOutside = (event) => {
-    // Hanya berjalan di mode mobile (ketika sidebar bisa dibuka/tutup)
     if (window.innerWidth < 768) {
-        // Jika sidebar terbuka dan klik diluar sidebar dan bukan pada toggle button
         if (
             isSidebarOpen.value && 
             sidebarRef.value && 
@@ -108,8 +106,11 @@ const toggleDarkMode = (event) => {
 
     setTimeout(() => {
         isDarkMode.value ? button.classList.add('dark:text-white') : button.classList.remove('dark:text-white')
-        button.disabled = false;
     }, 500);
+
+    setTimeout(() => {
+        button.disabled = false;
+    }, 1000);
 };
 
 onMounted(() => {
@@ -131,12 +132,10 @@ onMounted(() => {
         }
     });
 
-    // Tambahkan event listener untuk mendeteksi klik di luar sidebar
     document.addEventListener('click', handleClickOutside);
 });
 
 onUnmounted(() => {
-    // Hapus event listener ketika komponen dihapus
     document.removeEventListener('click', handleClickOutside);
 });
 </script>
