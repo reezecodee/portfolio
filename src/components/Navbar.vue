@@ -7,10 +7,10 @@
                     <div class="flex justify-start items-center text-black dark:text-white gap-3">
                         <img src="https://avatars.githubusercontent.com/u/159593076?v=4" width="35"
                             class="rounded-full border-2 border-black dark:border-white" alt="" srcset="">
-                        <span class="text-lg">Reeze</span>
+                        <span class="text-lg font-bold md:font-medium">Reeze</span>
                     </div>
                 </router-link>
-                <div id="toggleTarget" :class="isSidebarOpen ? 'block' : 'hidden'"
+                <div ref="sidebarRef" id="toggleTarget" :class="isSidebarOpen ? 'block' : 'hidden'"
                     class="bg-gray-100 dark:bg-gray-900 rounded-md md:rounded-none py-4 px-5 absolute right-6 top-20 md:bg-transparent md:dark:bg-transparent md:static md:py-0 md:px-0 md:block w-1/2 md:w-auto">
                     <router-link v-for="(link, index) in links" :key="index" :to="link.link"
                         class="font-semibold ml-0 my-6 md:my-0 md:ml-8 hover:text-black dark:hover:text-white block md:inline"
@@ -32,7 +32,7 @@
                         </svg>
                     </button>
                 </div>
-                <button id="nav-toggle" @click="toggleSidebar()" class="py-2 px-3 block md:hidden" type="button"><i
+                <button ref="navToggleRef" id="nav-toggle" @click="toggleSidebar()" class="py-2 px-3 block md:hidden" type="button"><i
                         class="fas fa-bars text-xl text-black dark:text-white"></i></button>
             </div>
         </nav>
@@ -40,13 +40,32 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import { useThemeStore } from '../stores/useThemeStore.js'
 
 const store = useThemeStore();
 const isSidebarOpen = ref(false);
+const sidebarRef = ref(null);
+const navToggleRef = ref(null);
+
 const toggleSidebar = () => {
     isSidebarOpen.value = !isSidebarOpen.value;
+};
+
+const handleClickOutside = (event) => {
+    // Hanya berjalan di mode mobile (ketika sidebar bisa dibuka/tutup)
+    if (window.innerWidth < 768) {
+        // Jika sidebar terbuka dan klik diluar sidebar dan bukan pada toggle button
+        if (
+            isSidebarOpen.value && 
+            sidebarRef.value && 
+            !sidebarRef.value.contains(event.target) &&
+            navToggleRef.value && 
+            !navToggleRef.value.contains(event.target)
+        ) {
+            isSidebarOpen.value = false;
+        }
+    }
 };
 
 const links = ref([
@@ -111,6 +130,14 @@ onMounted(() => {
             localStorage.setItem('theme', 'dark');
         }
     });
+
+    // Tambahkan event listener untuk mendeteksi klik di luar sidebar
+    document.addEventListener('click', handleClickOutside);
+});
+
+onUnmounted(() => {
+    // Hapus event listener ketika komponen dihapus
+    document.removeEventListener('click', handleClickOutside);
 });
 </script>
 
