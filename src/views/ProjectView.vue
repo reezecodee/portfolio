@@ -9,10 +9,12 @@
             <RouterLink to="">
                 <div
                     class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/siskomdig.jpg" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
+                    <img src="/projects/siskomdig.jpg" alt="Desa Serang Community"
+                        class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
                         <h3 class="font-bold text-lg md:text-base mb-1">SISKOMDIG</h3>
-                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang khusus untuk komunitas digital
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang
+                            khusus untuk komunitas digital
                             Desa
                             Serang, Tasikmalaya.</p>
                         <div class="flex justify-end items-center gap-2">
@@ -55,10 +57,12 @@
             <RouterLink to="">
                 <div
                     class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/situgas.jpg" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
+                    <img src="/projects/situgas.jpg" alt="Desa Serang Community"
+                        class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
                         <h3 class="font-bold text-lg md:text-base mb-1">SITUGAS</h3>
-                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang khusus untuk memonitoring
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang
+                            khusus untuk memonitoring
                             penugasan siswa di MTs BPI Baturompe</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -117,7 +121,8 @@
                         class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
                         <h3 class="font-bold text-lg md:text-base mb-1">SIG Desa Kaputihan</h3>
-                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang khusus untuk mengelola titik
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi yang dirancang
+                            khusus untuk mengelola titik
                             lokasi dan informasi bangunan di Desa Kaputihan</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -166,10 +171,12 @@
             <RouterLink to="">
                 <div
                     class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/app-islami.png" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
+                    <img src="/projects/app-islami.png" alt="Desa Serang Community"
+                        class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
                         <h3 class="font-bold text-lg md:text-base mb-1">App Islami</h3>
-                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi islami untuk melihat jadwal sholat, baca
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi islami untuk
+                            melihat jadwal sholat, baca
                             Al-Qur'an, asma'ul husna, do'a harian, dan niat sholat</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -195,10 +202,12 @@
             <RouterLink to="">
                 <div
                     class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/e-perpus-smk.png" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
+                    <img src="/projects/e-perpus-smk.png" alt="Desa Serang Community"
+                        class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
                         <h3 class="font-bold text-lg md:text-base mb-1">E-Perpustakaan SMK</h3>
-                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi perpustakaan untuk memonitoring peminjaman buku
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi perpustakaan
+                            untuk memonitoring peminjaman buku
                             dan kelola rak buku</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -227,6 +236,47 @@
                     </div>
                 </div>
             </RouterLink>
+            <RouterLink to="">
+                <div
+                    class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
+                    <img src="/projects/kaputihan-mart.png" alt="Kaputihan Mart"
+                        class="w-full h-full md:h-32 object-fill">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg md:text-base mb-1">Kaputihan Mart</h3>
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Aplikasi Berbasis Web
+                            untuk Sarana Promosi Produk UMKM Desa Kaputihan</p>
+                        <div class="flex justify-end items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-adonis-js">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 3c7.2 0 9 1.8 9 9s-1.8 9 -9 9s-9 -1.8 -9 -9s1.8 -9 9 -9z" />
+                                <path
+                                    d="M8.863 16.922c1.137 -.422 1.637 -.922 3.137 -.922s2 .5 3.138 .922c.713 .264 1.516 -.102 1.778 -.772c.126 -.32 .11 -.673 -.044 -.983l-3.708 -7.474c-.297 -.598 -1.058 -.859 -1.7 -.583a1.24 1.24 0 0 0 -.627 .583l-3.709 7.474c-.321 .648 -.017 1.415 .679 1.714c.332 .143 .715 .167 1.056 .04z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-mysql">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M13 21c-1.427 -1.026 -3.59 -3.854 -4 -6c-.486 .77 -1.501 2 -2 2c-1.499 -.888 -.574 -3.973 0 -6c-1.596 -1.433 -2.468 -2.458 -2.5 -4c-3.35 -3.44 -.444 -5.27 2.5 -3h1c8.482 .5 6.421 8.07 9 11.5c2.295 .522 3.665 2.254 5 3.5c-2.086 -.2 -2.784 -.344 -3.5 0c.478 1.64 2.123 2.2 3.5 3" />
+                                <path d="M9 7h.01" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bootstrap">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M2 12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2" />
+                                <path d="M2 12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2" />
+                                <path d="M9 16v-8h3.5a2 2 0 1 1 0 4h-3.5h4a2 2 0 1 1 0 4h-4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </RouterLink>
         </div>
         <h2 class="text-2xl mb-5 text-start font-extrabold pb-1 plus-jakarta-sans-heading">
             Machine Learning</h2>
@@ -234,10 +284,12 @@
             <RouterLink to="">
                 <div
                     class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                    <img src="/projects/arumi.png" alt="Desa Serang Community" class="w-full h-full md:h-32 object-fill">
+                    <img src="/projects/arumi.png" alt="Desa Serang Community"
+                        class="w-full h-full md:h-32 object-fill">
                     <div class="p-4">
                         <h3 class="font-bold text-lg md:text-base mb-1">Arumi</h3>
-                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Association rules dengan algoritma Apriori untuk membantu
+                        <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">Association rules dengan
+                            algoritma Apriori untuk membantu
                             customer dalam melihat rekomendasi produk</p>
                         <div class="flex justify-end items-center gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -278,8 +330,4 @@
 
 <script setup>
 import MainLayout from '@/layout/MainLayout.vue';
-
-
 </script>
-
-<style lang="scss" scoped></style>

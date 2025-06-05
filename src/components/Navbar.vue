@@ -139,5 +139,3 @@ onUnmounted(() => {
     document.removeEventListener('click', handleClickOutside);
 });
 </script>
-
-<style scoped></style>
