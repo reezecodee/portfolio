@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-wrap justify-start gap-x-4 mb-7 text-xs">
+    <div class="flex flex-wrap justify-start gap-x-4 mb-7 text-xs w-full">
         <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
             <img src="/svg/typescript.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
