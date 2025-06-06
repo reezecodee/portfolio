@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-wrap justify-start gap-x-4 mb-7 text-xs w-full">
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(64px,1fr))] gap-3 mb-7">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/typescript.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -9,7 +9,7 @@
                 TypeScript
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/python.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -18,7 +18,7 @@
                 Python
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/dart.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -27,7 +27,7 @@
                 Dart
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/flutter.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -36,7 +36,7 @@
                 Flutter
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/vue.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -45,7 +45,7 @@
                 Vue
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/laravel.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -54,7 +54,7 @@
                 Laravel
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/express.svg" class="w-14 rounded dark:invert" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -63,7 +63,7 @@
                 ExpressJS
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/adonis.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -72,7 +72,7 @@
                 AdonisJS
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/mysql.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -81,7 +81,7 @@
                 MySQL
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/mongo.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -90,7 +90,7 @@
                 MongoDB
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/postgresql.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
@@ -99,7 +99,7 @@
                 PostgreSQL
             </div>
         </div>
-        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer">
+        <div class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/svg/docker.svg" class="w-14 rounded" alt="Docker">
             <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 
               px-2 py-1 bg-gray-800 text-white text-xs rounded 
