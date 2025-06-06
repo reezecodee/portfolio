@@ -6,7 +6,8 @@
             <b>Harits</b> or <b>Al</b>.
             So, who is <b>Reeze</b>? Well, <b>Reeze</b> is the name I use on social media. Sometimes I feel a bit
             awkward using my real name because people often assume I'm a girl—when actually, I'm a guy. I'm often active
-            on Facebook and LinkedIn to share programming experiences.</p>
+            on Facebook and LinkedIn to share programming experiences.
+        </p>
         <p class="mb-7 text-start">I'm someone who aspires to become a <b>Backend Developer</b> with the goal of
             becoming a
             skilled developer. Usually, I build web applications using technologies like Laravel, Livewire, VueJS, or
@@ -25,6 +26,12 @@
             Connect with Me</h2>
         <p class="mb-5 text-start">Let me know if you’d like to collaborate—just reach out!</p>
         <SocialMedia />
+        <div v-if="false">
+            <h2 class="text-2xl text-start font-extrabold py-1 plus-jakarta-sans-heading">
+                Crypto Currencies</h2>
+            <p class="mb-5 text-start">Just Buying & Selling, No Risk No Money.</p>
+            <Crypto />
+        </div>
     </MainLayout>
 </template>
 
@@ -32,5 +39,6 @@
 import MainLayout from '@/layout/MainLayout.vue';
 import SkillSets from '@/components/SkillSets.vue';
 import SocialMedia from '@/components/SocialMedia.vue';
+import Crypto from '@/components/Crypto.vue';
 
 </script>
