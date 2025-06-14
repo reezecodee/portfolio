@@ -1,10 +1,17 @@
 <script setup>
+import { onMounted } from 'vue';
 import { RouterView } from 'vue-router'
 import { storeToRefs } from "pinia";
 import { useThemeStore } from "./stores/useThemeStore.js";
+import { useApiStore } from "./stores/useApiStore.js";
 
 const themeStore = useThemeStore();
+const apiStore = useApiStore();
 const { animationActive, isDarkMode, circlePositionX, circlePositionY } = storeToRefs(themeStore);
+
+onMounted(() => {
+  apiStore.fetchAll()
+})
 </script>
 
 <template>

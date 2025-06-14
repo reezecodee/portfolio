@@ -3,7 +3,7 @@
         <h1 class="text-4xl mb-1 text-start font-extrabold pb-1 plus-jakarta-sans-heading">
             My Projects</h1>
         <p class="mb-7 text-start">Some projects that i have worked on.</p>
-        <div v-for="(projects, category) in groupedProjects" :key="category">
+        <div v-for="(projects, category) in api.projects" :key="category">
             <h2 class="text-2xl mb-5 text-start font-extrabold pb-1 plus-jakarta-sans-heading">
                 {{ category }}</h2>
             <div class="flex flex-wrap gap-4 mb-7">
@@ -28,13 +28,9 @@
 
 <script setup>
 import MainLayout from '@/layout/MainLayout.vue';
-import {ref, onMounted} from 'vue';
-import axios from 'axios';
+import { ref, onMounted } from 'vue';
+import { useApiStore } from '@/stores/useApiStore.js';
 
-const groupedProjects = ref(null)
+const api = useApiStore()
 
-onMounted(async () => {
-    const res = await axios.get('https://reeze-portfolio-api.up.railway.app/projects')
-    groupedProjects.value = res.data
-})
 </script>

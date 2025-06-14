@@ -1,6 +1,6 @@
 <template>
     <div class="grid grid-cols-[repeat(auto-fit,minmax(64px,1fr))] gap-3 mb-7">
-        <div v-for="crypto in cryptos" :key="`crypto-${crypto.id}`"
+        <div v-for="crypto in api.cryptos" :key="`crypto-${crypto.id}`"
             class="group p-3 cursor-pointer w-full max-w-[80px] mx-auto">
             <img :src="`https://dknfcfcucbesgjhduhnv.supabase.co/storage/v1/object/public/cryptos
 /${crypto.icon}`" class="w-14 rounded mb-1">
@@ -11,12 +11,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import axios from 'axios';
+import { useApiStore } from '@/stores/useApiStore.js';
 
-const cryptos = ref(null)
-
-onMounted(async () => {
-    const res = await axios.get('https://reeze-portfolio-api.up.railway.app/cryptos')
-    cryptos.value = res.data
-})
+const api = useApiStore()
 </script>

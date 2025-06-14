@@ -1,6 +1,6 @@
 <template>
   <div class="grid grid-cols-[repeat(auto-fit,minmax(64px,1fr))] gap-3 mb-7">
-    <div v-for="skill in skills" :key="`skill-${skill.id}`"
+    <div v-for="skill in api.skills" :key="`skill-${skill.id}`"
       class="relative group p-3 shadow-sm rounded-lg cursor-pointer w-full max-w-[80px] mx-auto">
       <img :src="`https://dknfcfcucbesgjhduhnv.supabase.co/storage/v1/object/public/skills
 /${skill.icon}`" class="w-14 rounded" :class="{ 'dark:invert': skill.dark_invert }">
@@ -16,12 +16,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
-import axios from 'axios';
+import { useApiStore } from '@/stores/useApiStore.js';
 
-const skills = ref(null)
-
-onMounted(async () => {
-  const res = await axios.get('https://reeze-portfolio-api.up.railway.app/skills')
-  skills.value = res.data
-})
+const api = useApiStore()
 </script>
