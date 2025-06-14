@@ -3,7 +3,7 @@
         <div v-for="crypto in api.cryptos" :key="`crypto-${crypto.id}`"
             class="group p-3 cursor-pointer w-full max-w-[80px] mx-auto">
             <img :src="`https://dknfcfcucbesgjhduhnv.supabase.co/storage/v1/object/public/cryptos
-/${crypto.icon}`" class="w-14 rounded mb-1">
+/${crypto.icon}`" class="w-14 rounded mb-1" :class="{ 'dark:invert': crypto.dark_invert }">
             <p class="text-center text-xs">{{ crypto.percent }}%</p>
         </div>
     </div>

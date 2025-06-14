@@ -26,7 +26,7 @@
             Connect with Me</h2>
         <p class="mb-5 text-start">Let me know if you’d like to collaborate—just reach out!</p>
         <SocialMedia />
-        <div v-if="true">
+        <div v-if="false">
             <h2 class="text-2xl text-start font-extrabold py-1 plus-jakarta-sans-heading">
                 Crypto Currencies</h2>
             <p class="mb-5 text-start">Just Buying & Selling, No Risk No Money.</p>
