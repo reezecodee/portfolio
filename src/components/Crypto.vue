@@ -2,7 +2,7 @@
     <div class="grid grid-cols-[repeat(auto-fit,minmax(64px,1fr))] gap-3 mb-7">
         <div class="group p-3 cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/crypto-currency/btc.svg" class="w-14 rounded mb-1">
-            <p class="text-center text-xs">25%</p>
+            <p class="text-center text-xs">35%</p>
         </div>
         <div class="group p-3 cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/crypto-currency/eth.svg" class="w-14 rounded mb-1">
@@ -22,10 +22,6 @@
         </div>
         <div class="group p-3 cursor-pointer w-full max-w-[80px] mx-auto">
             <img src="/crypto-currency/sui.svg" class="w-14 rounded mb-1">
-            <p class="text-center text-xs">10%</p>
-        </div>
-        <div class="group p-3 cursor-pointer w-full max-w-[80px] mx-auto">
-            <img src="/crypto-currency/shib.svg" class="w-14 rounded mb-1">
             <p class="text-center text-xs">10%</p>
         </div>
     </div>
