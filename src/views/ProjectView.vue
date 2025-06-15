@@ -16,7 +16,7 @@
                             <h3 class="font-bold text-lg md:text-base mb-1">{{ project.title }}</h3>
                             <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">{{ project.description }}</p>
                             <div class="flex justify-end items-center gap-2">
-                                <img v-for="icon in project.skill_icons" width="24" height="24" :src="`https://dknfcfcucbesgjhduhnv.supabase.co/storage/v1/object/public/icons/brand-${icon}.svg`">
+                                <img v-for="icon in project.skill_icons" width="24" height="24" :src="`https://dknfcfcucbesgjhduhnv.supabase.co/storage/v1/object/public/icons/brand-${icon}.svg`" class="dark:invert">
                             </div>
                         </div>
                     </div>
