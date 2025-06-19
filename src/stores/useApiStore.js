@@ -11,7 +11,8 @@ const callAPIs = async (endpoint) => {
 export const useApiStore = defineStore("api", {
   state: () => ({
     skills: [],
-    cryptos: [],
+    // cryptos: [],
+    experiences: [],
     projects: [],
     blogs: [],
     loading: false,
@@ -21,7 +22,7 @@ export const useApiStore = defineStore("api", {
       this.loading = true;
       try {
         this.skills = await callAPIs("skills");
-        this.cryptos = await callAPIs("cryptos");
+        // this.cryptos = await callAPIs("cryptos");
         this.projects = await callAPIs("projects");
         this.blogs = await callAPIs("blogs");
       } catch (err) {

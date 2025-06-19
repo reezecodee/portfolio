@@ -19,6 +19,10 @@
             my studies. <b>Don't hesitate to collaborate with me!</b>.
         </p>
         <h2 class="text-2xl text-start font-extrabold py-1 plus-jakarta-sans-heading">
+            Experiences</h2>
+        <p class="mb-5 text-start">A few highlights from my journey so far.</p>
+        <Experiences />
+        <h2 class="text-2xl text-start font-extrabold py-1 plus-jakarta-sans-heading">
             Tools & Technologies</h2>
         <p class="mb-5 text-start">I'm not too confident in my abilities yet, but this is what I normally use.</p>
         <SkillSets />
@@ -26,12 +30,6 @@
             Connect with Me</h2>
         <p class="mb-5 text-start">Let me know if you’d like to collaborate—just reach out!</p>
         <SocialMedia />
-        <div v-if="false">
-            <h2 class="text-2xl text-start font-extrabold py-1 plus-jakarta-sans-heading">
-                Crypto Currencies</h2>
-            <p class="mb-5 text-start">Just Buying & Selling, No Risk No Money.</p>
-            <Crypto />
-        </div>
     </MainLayout>
 </template>
 
@@ -39,6 +37,7 @@
 import MainLayout from '@/layout/MainLayout.vue';
 import SkillSets from '@/components/SkillSets.vue';
 import SocialMedia from '@/components/SocialMedia.vue';
-import Crypto from '@/components/Crypto.vue';
+// import Crypto from '@/components/Crypto.vue';
+import Experiences from '@/components/Experiences.vue';
 
 </script>
