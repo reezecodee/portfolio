@@ -79,10 +79,6 @@ const links = ref([
         title: 'Blogs',
         link: '/blogs'
     },
-    {
-        title: 'Guestbook',
-        link: '/guestbook'
-    }
 ]);
 
 const theme = ref(localStorage.getItem('theme') || 'light');
