@@ -7,7 +7,7 @@
                     <div class="flex justify-start items-center text-black dark:text-white gap-3">
                         <img src="https://avatars.githubusercontent.com/u/159593076?v=4" 
                             class="rounded-full border-2 border-black dark:border-white w-12 md:w-10" alt="" srcset="">
-                        <span class="text-lg font-bold md:font-medium">Reeze</span>
+                        <span class="text-lg font-bold md:font-medium">Portfolio</span>
                     </div>
                 </router-link>
                 <div ref="sidebarRef" id="toggleTarget" :class="isSidebarOpen ? 'block' : 'hidden'"
