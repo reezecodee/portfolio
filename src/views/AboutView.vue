@@ -33,7 +33,6 @@
 import MainLayout from '@/layout/MainLayout.vue';
 import SkillSets from '@/components/SkillSets.vue';
 import SocialMedia from '@/components/SocialMedia.vue';
-// import Crypto from '@/components/Crypto.vue';
 import Experiences from '@/components/Experiences.vue';
 
 </script>

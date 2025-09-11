@@ -13,19 +13,18 @@
                 GitHub
             </button>
         </a>
-        <a href="https://dev.to/reezecodee" target="_blank">
+        <a href="https://www.kaggle.com/atylaaalharits" target="_blank">
             <button
                 class="p-3 bg-slate-300/70 hover:bg-slate-300 dark:bg-slate-800/70 dark:hover:bg-slate-800 duration-200 backdrop-blur-sm rounded-lg flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-device-tablet-code">
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-flask">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M11.5 21h-5.5a1 1 0 0 1 -1 -1v-16a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v9" />
-                    <path d="M12.344 16.06a1 1 0 0 0 -1.07 1.627" />
-                    <path d="M20 21l2 -2l-2 -2" />
-                    <path d="M17 17l-2 2l2 2" />
+                    <path d="M9 3l6 0" />
+                    <path d="M10 9l4 0" />
+                    <path d="M10 3v6l-4 11a.7 .7 0 0 0 .5 1h11a.7 .7 0 0 0 .5 -1l-4 -11v-6" />
                 </svg>
-                Dev Community
+                Kaggle
             </button>
         </a>
         <a href="https://www.linkedin.com/in/atyla-azfa-al-harits/" target="_blank">
@@ -54,20 +53,6 @@
                     <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
                 </svg>
                 Facebook
-            </button>
-        </a>
-        <a href="https://www.instagram.com/haritzzz.__/" target="_blank">
-            <button
-                class="p-3 bg-slate-300/70 hover:bg-slate-300 dark:bg-slate-800/70 dark:hover:bg-slate-800 duration-200 backdrop-blur-sm rounded-lg flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                    <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                    <path d="M16.5 7.5v.01" />
-                </svg>
-                Instagram
             </button>
         </a>
         <a href="/my-cv/cv.pdf" target="_blank">
