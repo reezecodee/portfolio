@@ -2,21 +2,17 @@
     <MainLayout>
         <h1 class="text-4xl mb-5 text-start font-extrabold pb-1 plus-jakarta-sans-heading">
             水に流す</h1>
-        <p class="mb-7 text-start">Hi there! My name is <b>Atyla Azfa Al Harits</b>, but people usually call me
-            <b>Harits</b> or <b>Al</b>.
-            So, who is <b>Reeze</b>? Well, <b>Reeze</b> is the name I use on social media. Sometimes I feel a bit
-            awkward using my real name because people often assume I'm a girl—when actually, I'm a guy. I'm often active
-            on Facebook and LinkedIn to share programming experiences.
+        <p class="mb-7 text-start">Hi there! My name is <b>Atyla Azfa Al Harits</b>, an Information Systems student at
+            Bina Sarana Informatika University with a strong passion for Backend Development. I have hands-on experience
+            building and developing server-side web applications using modern technologies like TypeScript, ExpressJS,
+            Laravel, and MySQL
         </p>
-        <p class="mb-7 text-start">I'm someone who aspires to become a <b>Backend Developer</b> with the goal of
-            becoming a
-            skilled developer. Usually, I build web applications using technologies like Laravel, Livewire, VueJS, or
-            AdonisJS. However, in the past few months, I have been trying to learn mobile applications with Dart
-            Flutter.</p>
-        <p class="mb-7 text-start">Besides programming, I'm an undergraduate student in Information Systems currently
-            studying at a university in the city of Tasikmalaya. Outside of class time, I make time to watch Anime or
-            learn languages like English and Japanese. Currently, I live in the city of Tasikmalaya, West Java to pursue
-            my studies. <b>Don't hesitate to collaborate with me!</b>.
+        <p class="mb-7 text-start">My goal is to grow into a skilled developer, and to achieve that, I am constantly
+            expanding my expertise. Currently, I'm delving into Mobile Development with Flutter for cross-platform apps
+            and exploring the fundamentals of Machine Learning.</p>
+        <p class="mb-7 text-start">Based in Tasikmalaya, West Java for my studies, I spend my free time watching anime
+            and learning new languages, including English and Japanese. I'm always enthusiastic about tackling new
+            challenges and am open to collaboration. <b>Feel free to reach out!</b>.
         </p>
         <h2 class="text-2xl text-start font-extrabold py-1 plus-jakarta-sans-heading">
             Experiences</h2>
