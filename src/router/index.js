@@ -1,9 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-// 1. Import komponen Layout utama Anda
-import MainLayout from "@/layout/MainLayout.vue"; // Pastikan path ini benar
+import MainLayout from "@/layout/MainLayout.vue"; 
 
-// 2. Import semua komponen View/Halaman Anda
 import AboutView from "@/views/AboutView.vue";
 import ExperienceView from "@/views/ExperienceView.vue";
 import EducationView from "@/views/EducationView.vue";
@@ -16,23 +14,20 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL || "/"),
   routes: [
     {
-      // 3. Definisikan Layout sebagai Rute Induk (Parent Route)
       path: "/",
       component: MainLayout,
-      // 4. Semua halaman sekarang menjadi "anak" (children) dari MainLayout
       children: [
         {
-          path: "", // Path kosong berarti ini adalah default untuk '/'
+          path: "",
           name: "about",
           component: AboutView,
-          // Mengirim props 'header' dan meta title ke layout
           meta: {
             title: "About Me - My Portfolio",
             header: "About" 
           },
         },
         {
-          path: "experiences", // Path menjadi '/experiences'
+          path: "experiences",
           name: "experiences",
           component: ExperienceView,
           meta: {
@@ -41,7 +36,7 @@ const router = createRouter({
           },
         },
         {
-          path: "educations", // Path menjadi '/educations'
+          path: "educations",
           name: "educations",
           component: EducationView,
           meta: {
@@ -50,7 +45,7 @@ const router = createRouter({
           },
         },
         {
-          path: "skills", // Path menjadi '/skills'
+          path: "skills", 
           name: "skills",
           component: SkillView,
           meta: {
@@ -59,7 +54,7 @@ const router = createRouter({
           },
         },
         {
-          path: "projects", // Path menjadi '/projects'
+          path: "projects", 
           name: "projects",
           component: ProjectView,
           meta: {
@@ -68,7 +63,7 @@ const router = createRouter({
           },
         },
         {
-          path: "blogs", // Path menjadi '/blogs'
+          path: "blogs", 
           name: "blogs",
           component: BlogView,
           meta: {
@@ -77,7 +72,7 @@ const router = createRouter({
           },
         },
         {
-          path: "guestbook", // Path menjadi '/guestbook'
+          path: "guestbook", 
           name: "guestbook",
           component: Guestbook,
           meta: {
@@ -90,11 +85,9 @@ const router = createRouter({
   ],
 });
 
-// 5. Modifikasi beforeEach untuk mengirim props dari meta
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title || "My Portfolio";
   
-  // Ini akan meneruskan semua isi meta sebagai props ke komponen rute
   to.matched.forEach(record => {
     record.props.default = { ...record.props.default, ...to.meta };
   });
