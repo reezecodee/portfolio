@@ -1,21 +1,56 @@
+<script setup>
+import ProfileSection from '@/components/ProfileSection.vue';
+import MainNav from '@/components/MainNav.vue';
+import ContactSection from '@/components/ContactSection.vue';
+import ContentSection from '@/components/ContentSection.vue';
+
+defineProps({
+    header: String
+})
+</script>
+
 <template>
-    <Navbar />
-    <div class="mt-28 plus-jakarta-sans-text">
-        <div class="container mx-auto px-4 md:px-8 text-justify md:text-start min-h-screen">
-            <div class="flex justify-center">
-                <div class="max-w-full md:max-w-3xl w-full text-black dark:text-white text-md">
-                    <slot></slot>
-                </div>
-            </div>
-        </div>
-        <div class="mx-auto max-w-full md:max-w-3xl w-full">
-            <hr class="border-t border-gray-700 mx-auto">
-            <Footer />
-        </div>
+    <div class="portfolio-container">
+        <aside class="sidebar">
+            <ProfileSection />
+            <MainNav />
+            <ContactSection />
+        </aside>
+
+        <main class="main-content">
+            <ContentSection :header="header">
+                <router-view /> 
+            </ContentSection>
+        </main>
     </div>
 </template>
 
-<script setup>
-import Navbar from '@/components/Navbar.vue';
-import Footer from '@/components/Footer.vue';
-</script>
+<style scoped>
+.portfolio-container {
+    display: flex;
+    max-width: 1300px;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sidebar {
+    flex-basis: 400px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-cream);
+    min-width: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px 50px;
+    background-color: var(--bg-cream);
+    position: relative;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+</style>

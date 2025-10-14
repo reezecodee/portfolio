@@ -1,98 +1,148 @@
+<script setup>
+</script>
+
 <template>
-    <MainLayout>
-        <h1 class="text-4xl mb-1 text-start font-extrabold pb-1 plus-jakarta-sans-heading">
-            My Projects</h1>
-        <p class="mb-7 text-start">Some projects that i have worked on.</p>
-        <div v-for="(projects, category) in api.projects" :key="category" class="mb-7">
-            <h2 class="text-2xl mb-5 text-start font-extrabold pb-1 plus-jakarta-sans-heading">
-                {{ category }}</h2>
-            <div class="flex flex-wrap gap-4 mb-7">
-                <RouterLink to="" v-for="project in projects" :key="project.id">
-                    <div
-                        class="w-full md:w-[15.3rem] bg-white hover:bg-slate-100 dark:bg-slate-800/50 dark:hover:bg-slate-800/70 duration-200 shadow-lg dark:shadow-gray-800 overflow-hidden cursor-pointer">
-                        <img :src="`https://dknfcfcucbesgjhduhnv.supabase.co/storage/v1/object/public/projects/${project.thumbnail}`"
-                            class="w-full h-full md:h-32 object-fill">
-                        <div class="p-4">
-                            <h3 class="font-bold text-lg md:text-base mb-1">{{ project.title }}</h3>
-                            <p class="text-base md:text-xs text-gray-800 dark:text-gray-300 mb-3">{{ project.description
-                                }}</p>
-                            <div class="flex justify-end items-center gap-2">
-                                <img v-for="icon in project.skill_icons" width="24" height="24"
-                                    :src="`https://dknfcfcucbesgjhduhnv.supabase.co/storage/v1/object/public/icons/brand-${icon}.svg`"
-                                    class="dark:invert">
-                            </div>
-                        </div>
+    <div class="projects-list">
+
+        <div class="project-category">
+            <h2>Web Development</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300.png/E8DED2/4B5563?text=E-Commerce"
+                            alt="Gambar Proyek E-Commerce">
                     </div>
-                </RouterLink>
-            </div>
-            <div class="flex justify-center mt-6" v-if="api.projects[category].length >= 6">
-                <button v-if="hasMore[category]" @click="callOthersData(category)"
-                    class="px-6 py-3 font-semibold border border-gray-300 rounded-lg text-sm text-black dark:text-white hover:bg-gray-100 duration-300 hover:dark:text-black transition-colors">
-                    Lihat Selanjutnya...
-                </button>
-                <button v-else @click="showLess(category)"
-                    class="px-6 py-3 font-semibold border border-gray-300 rounded-lg text-sm text-black dark:text-white hover:bg-gray-100 duration-300 hover:dark:text-black transition-colors">
-                    Lihat Lebih Sedikit...
-                </button>
+                    <div class="project-content">
+                        <h3>Platform E-Commerce</h3>
+                        <p class="project-tech"><strong>Teknologi:</strong> React, Node.js, Express,
+                            PostgreSQL</p>
+                        <p class="project-description">Sebuah platform e-commerce MERN stack dengan fitur
+                            manajemen produk, keranjang belanja, dan sistem pembayaran.</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300.png/E8DED2/4B5563?text=Blog"
+                            alt="Gambar Proyek Blog">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistem Manajemen Konten (CMS) Blog</h3>
+                        <p class="project-tech"><strong>Teknologi:</strong> Django, HTML, CSS, JavaScript
+                        </p>
+                        <p class="project-description">Website blog pribadi dengan dashboard admin untuk
+                            membuat, mengedit, dan menghapus post.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </MainLayout>
+
+        <div class="project-category">
+            <h2>Mobile Development</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300.png/E8DED2/4B5563?text=Todo+App"
+                            alt="Gambar Proyek Todo App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Aplikasi Todo List</h3>
+                        <p class="project-tech"><strong>Teknologi:</strong> React Native, Firebase</p>
+                        <p class="project-description">Aplikasi mobile cross-platform sederhana untuk
+                            mencatat tugas harian dengan sinkronisasi real-time.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-category">
+            <h2>Machine Learning</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x300.png/E8DED2/4B5563?text=Klasifikasi"
+                            alt="Gambar Proyek Klasifikasi Gambar">
+                    </div>
+                    <div class="project-content">
+                        <h3>Klasifikasi Gambar Bunga</h3>
+                        <p class="project-tech"><strong>Teknologi:</strong> Python, TensorFlow, Keras,
+                            Jupyter</p>
+                        <p class="project-description">Model Convolutional Neural Network (CNN) untuk
+                            mengklasifikasikan 5 jenis bunga yang berbeda dari gambar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </template>
 
-<script setup>
-import MainLayout from '@/layout/MainLayout.vue';
-import { ref, onMounted, watch } from 'vue';
-import { useApiStore } from '@/stores/useApiStore.js';
-import axios from 'axios';
-
-const api = useApiStore()
-const offsets = ref({})
-const hasMore = ref({})
-const metas = ref({})
-
-const callOthersData = async (projectType) => {
-    if (offsets.value[projectType] == null) {
-        offsets.value[projectType] = api.projects[projectType]?.length || 0
-    }
-
-    const res = await axios.get(`https://reeze-portfolio-api.up.railway.app/projects/specifics?offset=${offsets.value[projectType]}&project_type=${projectType}`)
-
-    if (!api.projects[projectType]) {
-        api.projects[projectType] = []
-    }
-
-    api.projects[projectType].push(...res.data.data)
-    offsets.value[projectType] += res.data.data.length
-
-    metas.value[projectType] = res.data.meta  // <-- Simpan meta per kategori
-    hasMore.value[projectType] = res.data.meta?.has_more ?? false
+<style scoped>
+.projects-list {
+    margin-top: 40px;
 }
 
-const showLess = (projectType) => {
-    api.projects[projectType] = api.projects[projectType].slice(0, 6)
-    offsets.value[projectType] = api.projects[projectType].length
-
-    // Reset meta, supaya next fetch bener
-    metas.value[projectType] = null
-
-    // Default: assume masih ada data (biar tombol "Lihat Selanjutnya" muncul)
-    hasMore.value[projectType] = true
+.project-category {
+    margin-bottom: 50px;
 }
 
-watch(
-    () => api.projects,
-    (newProjects) => {
-        for (const category in newProjects) {
-            offsets.value[category] = newProjects[category]?.length || 0
+.project-category h2 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--text-gray);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
 
-            if (metas.value[category]) {
-                hasMore.value[category] = metas.value[category].has_more
-            } else {
-                hasMore.value[category] = true
-            }
-        }
-    },
-    { immediate: true, deep: true }
-)
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
 
-</script>
+.project-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-orange);
+    margin-bottom: 10px;
+}
+
+.project-tech {
+    font-size: 12px;
+    color: var(--text-gray);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.project-description {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--text-gray);
+}
+</style>

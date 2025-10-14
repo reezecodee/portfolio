@@ -6,13 +6,30 @@ html {
     scrollbar-width: none;
 }
 
-* {
-    z-index: 6;
+:root {
+    --bg-cream: #FDFBF5;
+    --text-orange: #DD8047;
+    --text-dark: #333333;
+    --text-gray: #555555;
+    --border-color: #4B5563;
 }
 
-body::-webkit-scrollbar {
-    display: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--bg-cream);
+    margin: 40px 0;
+}
+
+/* body::-webkit-scrollbar {
+    display: none;
+} */
 
 .plus-jakarta-sans {
     font-family: "Plus Jakarta Sans", serif;
@@ -26,4 +43,26 @@ body::-webkit-scrollbar {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+}
+
+@media (max-width: 900px) {
+    body {
+        margin: 0;
+    }
+
+    .portfolio-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+        flex-basis: auto;
+        max-height: none;
+    }
+
+    .main-content {
+        padding: 40px 30px;
+    }
 }
