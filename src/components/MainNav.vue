@@ -1,31 +1,27 @@
 <script setup>
+import { computed } from 'vue';
+import { useRouter } from 'vue-router';
 
+const router = useRouter();
+
+const navLinks = computed(() => {
+  const mainRoute = router.options.routes.find(route => route.path === '/');
+  return mainRoute ? mainRoute.children.filter(child => child.meta && child.meta.header) : [];
+});
 </script>
 
 <template>
     <div class="wrapper-center">
         <nav class="main-nav">
             <ul>
-                <li>
-                    <router-link to="/" exact-active-class="active">About</router-link>
-                </li>
-                <li>
-                    <router-link to="/experiences" active-class="active">Experiences</router-link>
-                </li>
-                <li>
-                    <router-link to="/educations" active-class="active">Educations</router-link>
-                </li>
-                <li>
-                    <router-link to="/skills" active-class="active">Skills</router-link>
-                </li>
-                <li>
-                    <router-link to="/projects" active-class="active">Projects</router-link>
-                </li>
-                <li>
-                    <router-link to="/blogs" active-class="active">Blogs</router-link>
-                </li>
-                <li>
-                    <router-link to="/guestbook" active-class="active">Guestbook</router-link>
+                <li v-for="link in navLinks" :key="link.name">
+                    <router-link 
+                        :to="{ name: link.name }"
+                        :title="link.meta.title"  
+                        active-class="active"
+                        :exact-active-class="link.path === '' ? 'active' : ''">
+                        {{ link.meta.header }}
+                    </router-link>
                 </li>
             </ul>
         </nav>

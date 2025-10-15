@@ -22,7 +22,7 @@ const router = createRouter({
           name: "about",
           component: AboutView,
           meta: {
-            title: "About Me - My Portfolio",
+            title: "About Me",
             header: "About" 
           },
         },
@@ -31,7 +31,7 @@ const router = createRouter({
           name: "experiences",
           component: ExperienceView,
           meta: {
-            title: "Experiences - My Portfolio",
+            title: "Experiences",
             header: "Experiences"
           },
         },
@@ -40,7 +40,7 @@ const router = createRouter({
           name: "educations",
           component: EducationView,
           meta: {
-            title: "Educations - My Portfolio",
+            title: "Educations",
             header: "Educations"
           },
         },
@@ -49,7 +49,7 @@ const router = createRouter({
           name: "skills",
           component: SkillView,
           meta: {
-            title: "Skills - My Portfolio",
+            title: "Skills",
             header: "Skills"
           },
         },
@@ -58,7 +58,7 @@ const router = createRouter({
           name: "projects",
           component: ProjectView,
           meta: {
-            title: "Projects - My Portfolio",
+            title: "Projects",
             header: "Projects"
           },
         },
@@ -67,7 +67,7 @@ const router = createRouter({
           name: "blogs",
           component: BlogView,
           meta: {
-            title: "Blogs - My Portfolio",
+            title: "Blogs",
             header: "Blogs"
           },
         },
@@ -76,7 +76,7 @@ const router = createRouter({
           name: "guestbook",
           component: Guestbook,
           meta: {
-            title: "Guestbook - My Portfolio",
+            title: "Guestbook",
             header: "Guestbook"
           },
         },
@@ -86,7 +86,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  document.title = to.meta.title || "My Portfolio";
+  document.title = to.meta.title + ' - My Portfolio' || "My Portfolio";
   
   to.matched.forEach(record => {
     record.props.default = { ...record.props.default, ...to.meta };
