@@ -32,7 +32,7 @@ const router = createRouter({
           component: ExperienceView,
           meta: {
             title: "Experiences - My Portfolio",
-            header: "Experience"
+            header: "Experiences"
           },
         },
         {
@@ -41,7 +41,7 @@ const router = createRouter({
           component: EducationView,
           meta: {
             title: "Educations - My Portfolio",
-            header: "Education"
+            header: "Educations"
           },
         },
         {

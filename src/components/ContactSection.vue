@@ -6,32 +6,25 @@
     <div class="contact-section">
         <ul>
             <li>
-                <div class="icon"><i class="fas fa-phone"></i></div>
-                <div class="text">
-                    <h5>Phone</h5>
-                    <p>+62 812-3456-7890</p>
-                </div>
-            </li>
-            <li>
                 <div class="icon"><i class="fas fa-envelope"></i></div>
                 <div class="text">
                     <h5>Email</h5>
-                    <a href="mailto:madoka-yuzuhara@gmail.com">madoka-yuzuhara@gmail.com</a>
+                    <a href="mailto:azfaalharits25@gmail.com">azfaalharits25@gmail.com</a>
                 </div>
             </li>
             <li>
                 <div class="icon"><i class="fab fa-linkedin"></i></div>
                 <div class="text">
                     <h5>LinkedIn</h5>
-                    <a href="https://linkedin.com/in/madoka-yuzuhara"
-                        target="_blank">linkedin.com/in/madoka-yuzuhara</a>
+                    <a href="https://www.linkedin.com/in/atyla-azfa-al-harits/"
+                        target="_blank">linkedin.com/in/atyla-azfa-al-harits</a>
                 </div>
             </li>
             <li>
                 <div class="icon"><i class="fab fa-github"></i></div>
                 <div class="text">
                     <h5>Github</h5>
-                    <a href="https://github.com/madoka" target="_blank">www.github.com/madoka</a>
+                    <a href="https://github.com/reezecodee" target="_blank">www.github.com/reezecodee</a>
                 </div>
             </li>
         </ul>

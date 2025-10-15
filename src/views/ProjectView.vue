@@ -9,28 +9,12 @@
             <div class="projects-grid">
                 <div class="project-item">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300.png/E8DED2/4B5563?text=E-Commerce"
-                            alt="Gambar Proyek E-Commerce">
+                        <img src="https://i.pinimg.com/736x/63/69/08/636908b58c8bd1ec2903f7da5ea31000.jpg" alt="Gambar">
                     </div>
                     <div class="project-content">
-                        <h3>Platform E-Commerce</h3>
-                        <p class="project-tech"><strong>Teknologi:</strong> React, Node.js, Express,
-                            PostgreSQL</p>
-                        <p class="project-description">Sebuah platform e-commerce MERN stack dengan fitur
-                            manajemen produk, keranjang belanja, dan sistem pembayaran.</p>
-                    </div>
-                </div>
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300.png/E8DED2/4B5563?text=Blog"
-                            alt="Gambar Proyek Blog">
-                    </div>
-                    <div class="project-content">
-                        <h3>Sistem Manajemen Konten (CMS) Blog</h3>
-                        <p class="project-tech"><strong>Teknologi:</strong> Django, HTML, CSS, JavaScript
-                        </p>
-                        <p class="project-description">Website blog pribadi dengan dashboard admin untuk
-                            membuat, mengedit, dan menghapus post.</p>
+                        <h3>Not Added Yet</h3>
+                        <p class="project-tech"><strong>Tools:</strong> None</p>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam a, officiis ipsum deserunt inventore iusto.</p>
                     </div>
                 </div>
             </div>
@@ -41,14 +25,12 @@
             <div class="projects-grid">
                 <div class="project-item">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300.png/E8DED2/4B5563?text=Todo+App"
-                            alt="Gambar Proyek Todo App">
+                        <img src="https://i.pinimg.com/736x/63/69/08/636908b58c8bd1ec2903f7da5ea31000.jpg" alt="Gambar">
                     </div>
                     <div class="project-content">
-                        <h3>Aplikasi Todo List</h3>
-                        <p class="project-tech"><strong>Teknologi:</strong> React Native, Firebase</p>
-                        <p class="project-description">Aplikasi mobile cross-platform sederhana untuk
-                            mencatat tugas harian dengan sinkronisasi real-time.</p>
+                        <h3>Not Added Yet</h3>
+                        <p class="project-tech"><strong>Tools:</strong> None</p>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam a, officiis ipsum deserunt inventore iusto.</p>
                     </div>
                 </div>
             </div>
@@ -59,15 +41,12 @@
             <div class="projects-grid">
                 <div class="project-item">
                     <div class="project-image">
-                        <img src="https://via.placeholder.com/400x300.png/E8DED2/4B5563?text=Klasifikasi"
-                            alt="Gambar Proyek Klasifikasi Gambar">
+                        <img src="https://i.pinimg.com/736x/63/69/08/636908b58c8bd1ec2903f7da5ea31000.jpg" alt="Gambar">
                     </div>
                     <div class="project-content">
-                        <h3>Klasifikasi Gambar Bunga</h3>
-                        <p class="project-tech"><strong>Teknologi:</strong> Python, TensorFlow, Keras,
-                            Jupyter</p>
-                        <p class="project-description">Model Convolutional Neural Network (CNN) untuk
-                            mengklasifikasikan 5 jenis bunga yang berbeda dari gambar.</p>
+                        <h3>Not Added Yet</h3>
+                        <p class="project-tech"><strong>Tools:</strong> None</p>
+                        <p class="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam a, officiis ipsum deserunt inventore iusto.</p>
                     </div>
                 </div>
             </div>
@@ -103,7 +82,6 @@
 }
 
 .project-item {
-    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     overflow: hidden;

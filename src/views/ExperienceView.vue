@@ -5,42 +5,49 @@
     <div class="experience-list">
 
         <div class="experience-item">
-            <h3>Fullstack Web Developer</h3>
+            <h3>Web Developer</h3>
             <div class="experience-meta">
-                <span class="company">Tech Company Inc. | Jakarta</span>
-                <span class="date">Jan 2024 - Sekarang</span>
+                <span class="company">Diskominfo | Tasikmalaya</span>
+                <span class="date">Sep 2025 - Now</span>
             </div>
             <ul class="experience-description">
-                <li>Mengembangkan dan memelihara fitur front-end dan back-end untuk aplikasi web utama perusahaan.
-                </li>
-                <li>Berkolaborasi dengan desainer UI/UX untuk menerjemahkan wireframe menjadi kode yang fungsional.
-                </li>
-                <li>Mengoptimalkan aplikasi untuk kecepatan dan skalabilitas maksimum.</li>
+                <li>Developed the SIMGos web application from conception to deployment.</li>
+                <li>Designed and implemented comprehensive reports for public health centers and hospitals using
+                    Jaspersoft Studio and complex SQL queries.</li>
+                <li>Executed data cleaning and preparation processes using Google Sheets, and imported the sanitized
+                    data into the database with Navicat.</li>
             </ul>
         </div>
 
         <div class="experience-item">
-            <h3>Web Developer Intern</h3>
+            <h3>Freelance Web Developer</h3>
             <div class="experience-meta">
-                <span class="company">Startup Maju | Bandung</span>
-                <span class="date">Jun 2023 - Des 2023</span>
+                <span class="company">Self-Employed | Tasikmalaya</span>
+                <span class="date">Oct 2024 - Aug 2025</span>
             </div>
             <ul class="experience-description">
-                <li>Membantu tim senior dalam pengembangan website e-commerce menggunakan React dan Node.js.</li>
-                <li>Melakukan perbaikan bug dan peningkatan minor pada codebase yang ada.</li>
-                <li>Belajar dan menerapkan praktik terbaik dalam version control menggunakan Git.</li>
+                <li>
+                    Developed a digital community platform for Serang Village to foster resident interaction and
+                    streamline information sharing.
+                </li>
+                <li>
+                    Engineered an integrated application for Kaputihan Village, featuring a Geographic Information
+                    System (GIS) and a digital marketplace to promote local MSMEs.
+                </li>
             </ul>
         </div>
 
         <div class="experience-item">
-            <h3>Freelance Project: Portfolio Website</h3>
+            <h3>Student Intern</h3>
             <div class="experience-meta">
-                <span class="company">Personal Project</span>
-                <span class="date">Mar 2023</span>
+                <span class="company">Mutiara Digital Printing | Banjar</span>
+                <span class="date">Feb 2022 - Apr 2022</span>
             </div>
             <ul class="experience-description">
-                <li>Merancang dan membangun website portofolio pribadi dari awal menggunakan HTML, CSS, dan
-                    JavaScript.</li>
+                <li>
+                    Engineered a custom e-commerce platform for a printing services business, built upon the Codeigniter
+                    4 framework.
+                </li>
             </ul>
         </div>
 
@@ -88,5 +95,6 @@
     line-height: 1.8;
     color: var(--text-gray);
     padding-left: 20px;
+    list-style: disc;
 }
 </style>

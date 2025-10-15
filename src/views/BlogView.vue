@@ -4,30 +4,14 @@
 <template>
     <div class="blog-list">
 
-        <a href="#" class="blog-item">
+        <a href="https://medium.com/@reezedev/git-semantic-commit-message-d2cc926f72f3" target="_blank"
+            class="blog-item">
             <div class="blog-avatar">ID</div>
             <div class="blog-content">
                 <h3 class="blog-title">Pesan semantik pada perintah commit Git</h3>
                 <span class="blog-date">Jan 29, 2024</span>
             </div>
         </a>
-
-        <a href="#" class="blog-item">
-            <div class="blog-avatar">ID</div>
-            <div class="blog-content">
-                <h3 class="blog-title">Pengenalan Dasar-Dasar React Hooks</h3>
-                <span class="blog-date">Feb 15, 2024</span>
-            </div>
-        </a>
-
-        <a href="#" class="blog-item">
-            <div class="blog-avatar">ID</div>
-            <div class="blog-content">
-                <h3 class="blog-title">Mengamankan API dengan JWT di Express.js</h3>
-                <span class="blog-date">Mar 01, 2024</span>
-            </div>
-        </a>
-
     </div>
 </template>
 

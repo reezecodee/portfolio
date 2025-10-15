@@ -8,20 +8,20 @@
             <h2>Languages</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <i class="devicon-html5-plain-wordmark"></i>
-                    <p>HTML5</p>
+                    <img src="https://www.svgrepo.com/show/303600/typescript-logo.svg" alt="TypeScript Logo">
+                    <p>TypeScript</p>
                 </div>
                 <div class="skill-item">
-                    <i class="devicon-css3-plain-wordmark"></i>
-                    <p>CSS3</p>
+                    <img src="https://www.svgrepo.com/show/353631/dart.svg" alt="Dart Logo">
+                    <p>Dart</p>
                 </div>
                 <div class="skill-item">
-                    <i class="devicon-javascript-plain"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-python-plain-wordmark"></i>
+                    <img src="https://www.svgrepo.com/show/452091/python.svg" alt="Python Logo">
                     <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <img src="https://www.svgrepo.com/show/508936/php02.svg" alt="PHP Logo">
+                    <p>PHP</p>
                 </div>
             </div>
         </div>
@@ -30,16 +30,16 @@
             <h2>Frameworks</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <i class="devicon-nodejs-plain-wordmark"></i>
-                    <p>Node.js</p>
+                    <img src="https://www.svgrepo.com/show/330398/express.svg" alt="ExpressJS Logo">
+                    <p>ExpressJS</p>
                 </div>
                 <div class="skill-item">
-                    <i class="devicon-express-original-wordmark"></i>
-                    <p>Express</p>
+                    <img src="https://www.svgrepo.com/show/353985/laravel.svg" alt="Laravel Logo">
+                    <p>Laravel</p>
                 </div>
                 <div class="skill-item">
-                    <i class="devicon-django-plain-wordmark"></i>
-                    <p>Django</p>
+                    <img src="https://www.svgrepo.com/show/373604/flutter.svg" alt="Flutter Logo">
+                    <p>Flutter</p>
                 </div>
             </div>
         </div>
@@ -48,12 +48,12 @@
             <h2>Libraries</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <i class="devicon-react-original-wordmark"></i>
-                    <p>React</p>
+                    <img src="https://www.svgrepo.com/show/373776/light-prisma.svg" alt="Prisma Logo">
+                    <p>Prisma</p>
                 </div>
                 <div class="skill-item">
-                    <i class="devicon-tailwindcss-plain-wordmark"></i>
-                    <p>TailwindCSS</p>
+                    <img src="https://www.svgrepo.com/show/373701/jest-snapshot.svg" alt="Jest Logo">
+                    <p>Jest</p>
                 </div>
             </div>
         </div>
@@ -62,12 +62,8 @@
             <h2>Databases</h2>
             <div class="skills-grid">
                 <div class="skill-item">
-                    <i class="devicon-mysql-plain-wordmark"></i>
+                    <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" alt="MySQL Logo">
                     <p>MySQL</p>
-                </div>
-                <div class="skill-item">
-                    <i class="devicon-postgresql-plain-wordmark"></i>
-                    <p>PostgreSQL</p>
                 </div>
             </div>
         </div>
@@ -109,6 +105,7 @@
     padding: 15px;
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
 }
 
 .skill-item:hover {
@@ -116,14 +113,29 @@
     transform: translateY(-5px);
 }
 
-.skill-item i {
-    font-size: 3rem;
-    color: var(--text-dark);
+/* Modifikasi CSS untuk tag <img> */
+.skill-item img {
+    /* Mengganti .skill-item i dengan .skill-item img */
+    width: 48px;
+    /* Atur lebar gambar */
+    height: 48px;
+    /* Atur tinggi gambar (bisa juga 'auto' untuk menjaga rasio aspek) */
+    object-fit: contain;
+    /* Memastikan gambar pas tanpa terpotong */
+    /* Jika Anda ingin sedikit efek warna seperti ikon, bisa pakai filter */
+    /* filter: grayscale(100%); */
+    /* transition: filter 0.3s ease; */
 }
+
+/* Optional: Jika hover ingin mengembalikan warna */
+/* .skill-item:hover img {
+    filter: grayscale(0%);
+} */
 
 .skill-item p {
     font-size: 13px;
     font-weight: 500;
     color: var(--text-gray);
+    text-align: center;
 }
 </style>

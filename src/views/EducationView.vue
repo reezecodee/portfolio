@@ -4,31 +4,30 @@
 <template>
     <div class="education-list">
         <div class="education-item">
-            <h3>Sarjana Teknik Informatika</h3>
+            <h3>Bachelor of Science in Information Systems</h3>
             <div class="education-meta">
-                <span class="institution">Universitas Siliwangi, Tasikmalaya</span>
-                <span class="date">2021 - 2025 (Diharapkan)</span>
+                <span class="institution">Bina Sarana Informatika University, Tasikmalaya</span>
+                <span class="date">2023 - Present (Expected 2027)</span>
             </div>
             <ul class="education-description">
-                <li>IPK Saat Ini: 3.8 / 4.0</li>
-                <li>Mata kuliah relevan: Keamanan Jaringan, Pengembangan Web Lanjut, Rekayasa Perangkat Lunak, Basis
-                    Data Terdistribusi.</li>
-                <li>Aktif di himpunan mahasiswa sebagai kepala divisi teknologi dan informasi.</li>
+                <li>Current GPA: 3.6 / 4.0</li>
+                <li>Relevant Coursework: Web & Mobile Programming, Database Design, Information Systems Design, and Machine
+                    Learning.</li>
             </ul>
         </div>
 
         <div class="education-item">
-            <h3>Sekolah Menengah Atas</h3>
+            <h3>Vocational High School Diploma in Software Engineering</h3>
             <div class="education-meta">
-                <span class="institution">SMA Negeri 1 Tasikmalaya | Jurusan IPA</span>
-                <span class="date">2018 - 2021</span>
+                <span class="institution">SMK Negeri 3 Banjar, Banjar</span>
+                <span class="date">2020 - 2023</span>
             </div>
             <ul class="education-description">
-                <li>Lulus dengan predikat sangat baik dan nilai rata-rata 90.</li>
-                <li>Anggota ekstrakurikuler KIR (Kelompok Ilmiah Remaja) dengan fokus pada robotika sederhana.</li>
+                <li>Graduated with high marks, achieving an overall average score of 85/100.</li>
+                <li>Achieved an 'A' grade on the Vocational Competency Examination for the software engineering major.
+                </li>
             </ul>
         </div>
-
     </div>
 </template>
 

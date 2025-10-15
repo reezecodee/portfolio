@@ -4,18 +4,21 @@
 <template>
     <div class="about">
         <div class="title-name">
-            <h2>Madoka Yuzuhara</h2>
+            <h2>Atyla A. Al Harits</h2>
             <h3>Backend Developer | Information System Student</h3>
         </div>
 
         <p>
-            Yahoo! I'm a <strong>Backend Developer</strong> and an <strong>Undergraduate Student</strong>.
-            I've built websites, broken things, and learned a ton along the way—mostly by figuring stuff out myself
-            online. I pick up new tech fast, and if I don't know something, give me a bit, and I'll learn it. Let's
-            build something cool ~.
+            As a <strong>Backend Developer</strong> and an Information Systems undergraduate, I specialize in building scalable
+            server-side solutions with a tech stack including TypeScript, ExpressJS, Laravel, and MySQL.
         </p>
         <p>
-            Let's connect through <a href="https://linkedin.com/in/madoka-yuzuhara" target="_blank">LinkedIn</a>, we
+            I have a great passion for technology and am actively developing my competencies in Mobile Development
+            (Flutter) and Machine Learning. I am looking for an opportunity to contribute my technical expertise to
+            innovative and impactful projects.
+        </p>
+        <p>
+            Let's connect through <a href="https://www.linkedin.com/in/atyla-azfa-al-harits/" target="_blank">LinkedIn</a>, we
             can
             share insights, innovative ideas and valuable collaboration opportunities!
         </p>
@@ -24,7 +27,7 @@
 
 <style scoped>
 .title-name {
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 

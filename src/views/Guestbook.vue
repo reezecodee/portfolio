@@ -20,24 +20,13 @@
 
     <div class="guestbook-entries">
         <div class="entry-item">
-            <div class="entry-avatar">FN</div>
+            <div class="entry-avatar">A</div>
             <div class="entry-content">
                 <div class="entry-header">
-                    <span class="entry-name">First Name</span>
+                    <span class="entry-name">Avicenna</span>
                     <span class="entry-date">Oct 14, 2025</span>
                 </div>
-                <p class="entry-message">Portofolionya keren banget! Desainnya bersih dan informatif. Terus
-                    berkarya!</p>
-            </div>
-        </div>
-        <div class="entry-item">
-            <div class="entry-avatar">LN</div>
-            <div class="entry-content">
-                <div class="entry-header">
-                    <span class="entry-name">Last Name</span>
-                    <span class="entry-date">Oct 12, 2025</span>
-                </div>
-                <p class="entry-message">Sangat menginspirasi. Semoga sukses selalu!</p>
+                <p class="entry-message">Test bang</p>
             </div>
         </div>
     </div>
