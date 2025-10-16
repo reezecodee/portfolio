@@ -88,10 +88,6 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title + ' - My Portfolio' || "My Portfolio";
   
-  to.matched.forEach(record => {
-    record.props.default = { ...record.props.default, ...to.meta };
-  });
-
   next();
 });
 

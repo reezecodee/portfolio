@@ -3,6 +3,7 @@ import ProfileSection from '@/components/ProfileSection.vue';
 import MainNav from '@/components/MainNav.vue';
 import ContactSection from '@/components/ContactSection.vue';
 import ContentSection from '@/components/ContentSection.vue';
+import { RouterView } from 'vue-router'
 
 defineProps({
     header: String
@@ -19,7 +20,7 @@ defineProps({
 
         <main class="main-content">
             <ContentSection :header="header">
-                <router-view /> 
+                <RouterView />
             </ContentSection>
         </main>
     </div>
