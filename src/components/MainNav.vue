@@ -1,24 +1,52 @@
 <script setup>
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
 const navLinks = computed(() => {
-  const mainRoute = router.options.routes.find(route => route.path === '/');
-  return mainRoute ? mainRoute.children.filter(child => child.meta && child.meta.header) : [];
+    const mainRoute = router.options.routes.find(route => route.path === '/');
+    return mainRoute ? mainRoute.children.filter(child => child.meta && child.meta.header) : [];
 });
+
+const navRef = ref(null); 
+let isDown = false;
+let startX;
+let scrollLeft;
+
+const handleMouseDown = (e) => {
+    isDown = true;
+    navRef.value.classList.add('active-drag');
+    startX = e.pageX - navRef.value.offsetLeft;
+    scrollLeft = navRef.value.scrollLeft;
+};
+
+const handleMouseLeave = () => {
+    isDown = false;
+    navRef.value.classList.remove('active-drag');
+};
+
+const handleMouseUp = () => {
+    isDown = false;
+    navRef.value.classList.remove('active-drag');
+};
+
+const handleMouseMove = (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - navRef.value.offsetLeft;
+    const walk = (x - startX) * 2; 
+    navRef.value.scrollLeft = scrollLeft - walk;
+};
 </script>
 
 <template>
     <div class="wrapper-center">
-        <nav class="main-nav">
+        <nav class="main-nav" ref="navRef" @mousedown="handleMouseDown" @mouseleave="handleMouseLeave"
+            @mouseup="handleMouseUp" @mousemove="handleMouseMove">
             <ul>
                 <li v-for="link in navLinks" :key="link.name">
-                    <router-link 
-                        :to="{ name: link.name }"
-                        :title="link.meta.title"  
-                        active-class="active"
+                    <router-link :to="{ name: link.name }" :title="link.meta.title" active-class="active" draggable="false"
                         :exact-active-class="link.path === '' ? 'active' : ''">
                         {{ link.meta.header }}
                     </router-link>
@@ -29,9 +57,10 @@ const navLinks = computed(() => {
 </template>
 
 <style scoped>
-.wrapper-center{
+.wrapper-center {
     display: flex;
     justify-content: center;
+    user-select: none;
 }
 
 .main-nav {
@@ -78,5 +107,10 @@ const navLinks = computed(() => {
 .main-nav a.active {
     color: var(--text-orange);
     font-weight: 600;
+}
+
+.main-nav.active-drag {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
 }
 </style>
