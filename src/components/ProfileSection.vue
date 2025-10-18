@@ -2,7 +2,7 @@
 defineProps({
   imageUrl: {
     type: String,
-    default: 'https://i.pinimg.com/736x/55/f4/09/55f409db2f2178e7422562f3d36ed5b5.jpg'
+    default: 'madoka-yuzuhara.jpg'
   }
 })
 </script>

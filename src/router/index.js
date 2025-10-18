@@ -22,7 +22,7 @@ const router = createRouter({
           name: "about",
           component: AboutView,
           meta: {
-            title: "About Me",
+            title: "About",
             header: "About" 
           },
         },
