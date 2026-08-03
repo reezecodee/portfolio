@@ -18,6 +18,7 @@ export default defineConfig({
     entries: ['src/main.ts'],
   },
   server: {
+    allowedHosts: true, // Allow any host for Cloudflare Tunnels/ngrok
     headers: {
       'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
       'Pragma': 'no-cache',
