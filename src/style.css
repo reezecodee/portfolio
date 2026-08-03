@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+body {
+  zoom: 90%;
+}
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --color-dark: #0f172a;
+  --color-darker: #020617;
+  --color-silver: #e2e8f0;
+  --shadow-glow-white: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #020617; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+/* Subtle glow animation for the background blob */
+@keyframes pulse-slow {
+    0%, 100% { opacity: 0.15; transform: scale(1); }
+    50% { opacity: 0.25; transform: scale(1.05); }
+}
+.blob-animate {
+    animation: pulse-slow 8s infinite ease-in-out;
+}

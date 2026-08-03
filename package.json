@@ -1,31 +1,27 @@
 {
-  "name": "web-portfolio",
-  "version": "0.0.0",
+  "name": "temp-app",
   "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vue-tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.86.2",
-    "@tanstack/vue-query": "^5.92.1",
-    "axios": "^1.9.0",
-    "lucide-vue-next": "^0.555.0",
-    "marked": "^17.0.1",
-    "pinia": "^3.0.1",
-    "pinia-plugin-persistedstate": "^4.3.0",
-    "vue": "^3.4.15",
-    "vue-i18n": "^11.2.2",
-    "vue-router": "^4.2.5",
-    "zod": "^4.3.4"
+    "@iconify/vue": "^5.0.1",
+    "vue": "^3.5.40",
+    "vue-i18n": "^11.4.8",
+    "vue-router": "^5.2.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.0.3",
-    "autoprefixer": "^10.4.17",
-    "postcss": "^8.4.35",
-    "tailwindcss": "^3.4.1",
-    "vite": "^5.0.11"
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@vitejs/plugin-vue": "^6.0.8",
+    "@vue/tsconfig": "^0.9.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0",
+    "vue-tsc": "^3.3.8"
   }
 }

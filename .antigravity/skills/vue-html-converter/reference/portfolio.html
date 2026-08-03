@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Solid Dark UI</title>
+    
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Load Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Load Devicon for Tech Stack Logos -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0f172a', // slate-900
+                        darker: '#020617', // slate-950
+                        silver: '#e2e8f0', // slate-200
+                    },
+                    boxShadow: {
+                        'glow-white': '0 0 20px rgba(255, 255, 255, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for dark theme */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #475569; }
+        
+        /* Subtle glow animation for the background blob */
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 0.15; transform: scale(1); }
+            50% { opacity: 0.25; transform: scale(1.05); }
+        }
+        .blob-animate {
+            animation: pulse-slow 8s infinite ease-in-out;
+        }
+    </style>
+</head>
+
+<body class="bg-darker text-slate-400 font-sans antialiased overflow-x-hidden selection:bg-silver selection:text-darker">
+
+    <!-- Background Glow Effects (Subdued Monochrome) -->
+    <div class="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-white/5 blur-[120px] pointer-events-none blob-animate z-0"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-slate-500/5 blur-[120px] pointer-events-none blob-animate z-0" style="animation-delay: -4s;"></div>
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 backdrop-blur-md bg-darker/80 border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white tracking-tighter flex items-center gap-2 group">
+                <i class="ph ph-terminal-window text-white transition-colors duration-300"></i>
+                <span>Atyla.</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#home" class="text-slate-400 hover:text-white transition-colors duration-300">Home</a>
+                <a href="#about" class="text-slate-400 hover:text-white transition-colors duration-300">About</a>
+                <a href="#resume" class="text-slate-400 hover:text-white transition-colors duration-300">Resume</a>
+                <a href="#portfolio" class="text-slate-400 hover:text-white transition-colors duration-300">Portfolio</a>
+                <a href="#blog" class="text-slate-400 hover:text-white transition-colors duration-300">Blog</a>
+                <!-- Solid Button transition -->
+                <a href="#contact" class="px-5 py-2 rounded-full border border-white bg-white text-darker font-bold hover:bg-silver hover:scale-105 transition-all duration-300 shadow-glow-white">Let's Talk</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-2xl text-slate-300 hover:text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark border-b border-slate-800 p-4 absolute w-full flex-col gap-4 text-center shadow-2xl">
+            <a href="#home" class="block py-2 text-slate-300 hover:text-white">Home</a>
+            <a href="#about" class="block py-2 text-slate-300 hover:text-white">About</a>
+            <a href="#resume" class="block py-2 text-slate-300 hover:text-white">Resume</a>
+            <a href="#portfolio" class="block py-2 text-slate-300 hover:text-white">Portfolio</a>
+            <a href="#blog" class="block py-2 text-slate-300 hover:text-white">Blog</a>
+            <a href="#contact" class="block py-2 bg-white text-darker font-bold rounded-full mt-2">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative z-10 min-h-screen flex items-center justify-center pt-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Hero Text -->
+            <div class="order-2 md:order-1 text-center md:text-left">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-semibold text-white mb-6 backdrop-blur-sm">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                    </span>
+                    Tersedia untuk proyek *remote* & *agile*
+                </div>
+                
+                <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                    Atyla Azfa <br>
+                    <span class="text-slate-400">Al Harits.</span>
+                </h1>
+                
+                <h2 class="text-2xl text-white font-medium mb-4">Web & Backend Developer</h2>
+                <p class="text-lg text-slate-400 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
+                    Mahasiswa Sistem Informasi yang berfokus pada arsitektur <i>backend</i> yang efisien dan pengembangan web berskala besar. Mahir dalam Laravel & TypeScript.
+                </p>
+                
+                <!-- Action Buttons: Solid & Outline -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start">
+                    <a href="#" class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-white text-darker font-bold hover:bg-silver shadow-glow-white hover:scale-105 transition-all duration-300 text-center flex justify-center items-center gap-2">
+                        <i class="ph ph-download-simple text-xl"></i> Download CV
+                    </a>
+                    <a href="https://github.com/azuvicenna" target="_blank" class="w-full sm:w-auto px-8 py-3.5 rounded-full border border-slate-700 text-white font-semibold hover:border-white hover:bg-white/5 transition-all duration-300 text-center flex justify-center items-center gap-2 group">
+                        <i class="ph ph-github-logo text-xl"></i> Github
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hero Abstract Visual (Monochrome) -->
+            <div class="order-1 md:order-2 flex justify-center relative">
+                <div class="relative w-64 h-64 md:w-[400px] md:h-[400px] group">
+                    <!-- Efek cahaya terang dari belakang kotak (Glow Background) -->
+                    <div class="absolute inset-0 bg-white rounded-3xl rotate-6 opacity-10 blur-2xl group-hover:opacity-25 group-hover:rotate-12 transition-all duration-700"></div>
+                    
+                    <!-- Kotak Foto dengan efek Shadow Glow Putih -->
+                    <div class="absolute inset-0 bg-dark border border-slate-500/60 rounded-3xl -rotate-3 overflow-hidden shadow-glow-white flex items-center justify-center p-4 transition-transform group-hover:rotate-0 duration-500 z-10">
+                        <div class="grid grid-cols-2 gap-3 w-full h-full opacity-90 group-hover:opacity-100 transition-opacity">
+                            <!-- Image 1 -->
+                            <img src="https://placehold.co/200x200/1e293b/cbd5e1?text=Photo+1" alt="Grid Image 1" class="w-full h-full object-cover rounded-xl border border-slate-600 hover:scale-105 transition-transform duration-300 grayscale hover:grayscale-0">
+                            <!-- Image 2 -->
+                            <img src="https://placehold.co/200x200/1e293b/cbd5e1?text=Photo+2" alt="Grid Image 2" class="w-full h-full object-cover rounded-xl border border-slate-600 hover:scale-105 transition-transform duration-300 grayscale hover:grayscale-0">
+                            <!-- Image 3 -->
+                            <img src="https://placehold.co/200x200/1e293b/cbd5e1?text=Photo+3" alt="Grid Image 3" class="w-full h-full object-cover rounded-xl border border-slate-600 hover:scale-105 transition-transform duration-300 grayscale hover:grayscale-0">
+                            <!-- Image 4 -->
+                            <img src="https://placehold.co/200x200/1e293b/cbd5e1?text=Photo+4" alt="Grid Image 4" class="w-full h-full object-cover rounded-xl border border-slate-600 hover:scale-105 transition-transform duration-300 grayscale hover:grayscale-0">
+                        </div>
+                        <!-- Optional Icon Overlay (Bisa dihapus jika mengganggu foto) -->
+                        <i class="ph ph-code text-7xl text-white/30 absolute pointer-events-none drop-shadow-lg"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative z-10 py-24 bg-dark/30 border-y border-white/5">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            
+            <!-- Informasi Kiri -->
+            <div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Tentang Saya</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                    Saya adalah Mahasiswa semester 6 Jurusan Sistem Informasi dengan pengalaman praktis yang kuat sebagai Web Developer. Saya memiliki minat mendalam pada pengembangan sistem *backend*, terutama menggunakan <strong>Laravel</strong> dan <strong>TypeScript</strong>.
+                </p>
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                    Saya berpengalaman menangani proyek berskala besar secara *remote*, sangat terbiasa dengan kolaborasi alur kerja Agile, dan memiliki kemampuan pemecahan masalah (*problem-solving*) yang telah teruji di lapangan.
+                </p>
+                <div class="flex items-center gap-4 text-slate-300">
+                    <div class="flex items-center gap-2"><i class="ph ph-map-pin text-xl"></i> Ciamis, Jawa Barat</div>
+                </div>
+            </div>
+            
+            <!-- Foto Kanan -->
+            <div class="relative flex justify-center md:justify-end">
+                <div class="absolute -inset-4 bg-white/5 rounded-2xl blur-lg"></div>
+                <img src="https://placehold.co/400x500/1e293b/cbd5e1?text=Atyla+Photo" alt="Atyla Azfa Al Harits" class="relative z-10 w-full max-w-sm rounded-2xl border border-slate-700 object-cover shadow-2xl grayscale hover:grayscale-0 transition-all duration-500">
+            </div>
+            
+        </div>
+        
+        <!-- Skills & Languages Divider -->
+        <div class="max-w-6xl mx-auto px-6 mt-20 grid md:grid-cols-3 gap-12">
+            
+            <!-- Skills Categories (Takes 2 Columns) -->
+            <div class="md:col-span-2">
+                <h3 class="text-2xl font-bold text-white mb-8 border-b border-slate-800 pb-4">Keahlian Teknis</h3>
+                
+                <div class="space-y-6">
+                    <!-- Kategori 1 -->
+                    <div>
+                        <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">Bahasa Pemrograman</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-php-plain text-lg"></i> PHP</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-python-plain text-lg"></i> Python</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-dart-plain text-lg"></i> Dart</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-typescript-plain text-lg"></i> TypeScript</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Kategori 2 -->
+                    <div>
+                        <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">Framework & Library</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-laravel-original text-lg"></i> Laravel</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-vuejs-plain text-lg"></i> Vue.js</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-codeigniter-plain text-lg"></i> CodeIgniter 4</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-flutter-plain text-lg"></i> Flutter</span>
+                        </div>
+                    </div>
+
+                    <!-- Kategori 3 -->
+                    <div>
+                        <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">Database</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-mysql-plain text-lg"></i> MySQL</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-postgresql-plain text-lg"></i> PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Kategori 4 -->
+                    <div>
+                        <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">Tools & Infrastructure</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-docker-plain text-lg"></i> Docker</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="devicon-git-plain text-lg"></i> Git/GitHub</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="ph ph-cube text-lg"></i> Bruno</span>
+                            <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><i class="ph ph-database text-lg"></i> Navicat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-8 border-b border-slate-800 pb-4">Bahasa</h3>
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center p-4 bg-darker border border-slate-800 rounded-xl hover:border-slate-500 transition-colors">
+                        <img src="https://flagcdn.com/w80/jp.png" alt="Japan Flag" class="w-10 h-10 object-cover rounded-full border border-slate-700 mr-4">
+                        <div>
+                            <h5 class="text-white font-semibold">Bahasa Jepang</h5>
+                            <p class="text-xs text-slate-500">Komunikasi Tertulis & Verbal</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center p-4 bg-darker border border-slate-800 rounded-xl hover:border-slate-500 transition-colors">
+                        <img src="https://flagcdn.com/w80/gb.png" alt="UK Flag" class="w-10 h-10 object-cover rounded-full border border-slate-700 mr-4">
+                        <div>
+                            <h5 class="text-white font-semibold">Bahasa Inggris</h5>
+                            <p class="text-xs text-slate-500">Profesional / Bisnis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Resume Section (Education & Experience) -->
+    <section id="resume" class="relative z-10 py-24">
+        <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16">
+            
+            <!-- Education (Timeline) -->
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-8 flex items-center gap-3"><i class="ph ph-graduation-cap"></i> Riwayat Pendidikan</h2>
+                
+                <div class="relative border-l border-slate-800 ml-4 space-y-10 pb-4">
+                    
+                    <!-- Item Timeline 1 -->
+                    <div class="relative pl-8">
+                        <div class="absolute w-4 h-4 bg-dark border-2 border-white rounded-full -left-[9px] top-1"></div>
+                        <div class="flex gap-4 items-start">
+                            <img src="https://placehold.co/100x100/1e293b/cbd5e1?text=UBSI" alt="UBSI Logo" class="w-12 h-12 rounded bg-dark border border-slate-800 object-cover">
+                            <div>
+                                <span class="text-xs font-bold text-white px-3 py-1 bg-white/10 rounded-full border border-white/10">2023 - Sekarang</span>
+                                <h3 class="text-xl font-bold text-white mt-3">Sistem Informasi (S1) - Smtr 6</h3>
+                                <h4 class="text-slate-400 font-medium mb-3">Universitas Bina Sarana Informatika</h4>
+                                <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                                    <li>Terlibat proyek pengabdian masyarakat (mandiri & hibah pemerintah).</li>
+                                    <li>Membangun aplikasi mobile dengan Flutter.</li>
+                                    <li>Mengerjakan proyek machine learning menggunakan Python.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item Timeline 2 -->
+                    <div class="relative pl-8">
+                        <div class="absolute w-4 h-4 bg-dark border-2 border-slate-600 rounded-full -left-[9px] top-1"></div>
+                        <div class="flex gap-4 items-start">
+                            <img src="https://placehold.co/100x100/1e293b/cbd5e1?text=SMKN3" alt="SMKN 3 Logo" class="w-12 h-12 rounded bg-dark border border-slate-800 object-cover">
+                            <div>
+                                <span class="text-xs font-bold text-slate-400 px-3 py-1 bg-slate-800 rounded-full border border-slate-700">2020 - 2023</span>
+                                <h3 class="text-xl font-bold text-slate-200 mt-3">Rekayasa Perangkat Lunak (RPL)</h3>
+                                <h4 class="text-slate-400 font-medium mb-3">SMK Negeri 3 Banjar</h4>
+                                <ul class="list-disc list-inside text-sm text-slate-400 space-y-1">
+                                    <li>Membangun proyek menggunakan PHP & framework Laravel.</li>
+                                    <li>Merancang struktur database SQL kuat (MySQL).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Experience (Cards List) -->
+            <div>
+                <h2 class="text-3xl font-bold text-white mb-8 flex items-center gap-3"><i class="ph ph-briefcase"></i> Pengalaman Kerja</h2>
+                
+                <div class="space-y-6">
+                    
+                    <!-- Job Card 1 -->
+                    <div class="bg-darker border border-slate-800 p-6 rounded-2xl hover:border-slate-500 transition-colors">
+                        <div class="flex gap-5 items-start">
+                            <img src="https://placehold.co/100x100/1e293b/cbd5e1?text=Diskominfo" alt="Diskominfo Logo" class="w-14 h-14 rounded-lg bg-dark object-cover">
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <h3 class="text-lg font-bold text-white">Software Developer Intern</h3>
+                                    <span class="text-xs font-medium text-slate-400">Sep 2025 - Des 2025</span>
+                                </div>
+                                <h4 class="text-slate-400 text-sm mb-4">Diskominfo Kota Tasikmalaya</h4>
+                                <ul class="list-disc list-outside ml-4 text-sm text-slate-400 space-y-2">
+                                    <li>Pengembangan dan pemeliharaan aplikasi SIMPUS (Sistem Informasi Puskesmas).</li>
+                                    <li>Melakukan riset mandiri untuk memetakan alur data kesehatan kompleks menjadi skema database yang efisien.</li>
+                                    <li>Bekerja *remote* dengan sistem kolaborasi Git dan Kanban board.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 2 -->
+                    <div class="bg-darker border border-slate-800 p-6 rounded-2xl hover:border-slate-500 transition-colors">
+                        <div class="flex gap-5 items-start">
+                            <img src="https://placehold.co/100x100/1e293b/cbd5e1?text=Digital+Print" alt="Print Logo" class="w-14 h-14 rounded-lg bg-dark object-cover">
+                            <div>
+                                <div class="flex justify-between items-center mb-1">
+                                    <h3 class="text-lg font-bold text-white">Siswa Magang</h3>
+                                    <span class="text-xs font-medium text-slate-400">Feb 2022 - Apr 2022</span>
+                                </div>
+                                <h4 class="text-slate-400 text-sm mb-4">Mutiara Digital Printing Kota Banjar</h4>
+                                <ul class="list-disc list-outside ml-4 text-sm text-slate-400 space-y-2">
+                                    <li>Asisten teknikal karyawan di bidang percetakan banner/spanduk.</li>
+                                    <li>Membangun aplikasi toko percetakan *online* berbasis web dengan CodeIgniter 4.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio" class="relative z-10 py-24 bg-dark/30 border-t border-white/5">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Proyek Utama</h2>
+            <p class="text-slate-400 max-w-xl mb-12">Beberapa studi kasus sistem dan aplikasi yang telah saya bangun.</p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
+                    <div class="h-56 overflow-hidden relative border-b border-slate-800">
+                        <div class="absolute inset-0 bg-darker/20 z-10"></div>
+                        <img src="https://placehold.co/800x600/1e293b/cbd5e1?text=SIMPUS" alt="SIMPUS Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><i class="devicon-laravel-plain"></i> Laravel</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><i class="devicon-mysql-plain"></i> MySQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">SIMPUS (Sistem Informasi Puskesmas)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Mengembangkan sistem manajemen data kesehatan publik yang aman dengan arsitektur database multi-tenant yang optimal.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
+                    <div class="h-56 overflow-hidden relative border-b border-slate-800">
+                        <div class="absolute inset-0 bg-darker/20 z-10"></div>
+                        <img src="https://placehold.co/800x600/1e293b/cbd5e1?text=SITUGAS" alt="SITUGAS Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><i class="devicon-php-plain"></i> PHP</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><i class="devicon-mysql-plain"></i> SQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">SITUGAS MTs BPI Baturompe</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Mengembangkan sistem absensi dan platform pengumpulan tugas digital terintegrasi untuk mendukung proses belajar mengajar siswa dan guru.</p>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
+                    <div class="h-56 overflow-hidden relative border-b border-slate-800">
+                        <div class="absolute inset-0 bg-darker/20 z-10"></div>
+                        <img src="https://placehold.co/800x600/1e293b/cbd5e1?text=Perpus+Digital" alt="Perpus Digital Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><i class="devicon-laravel-plain"></i> Laravel</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Aplikasi Perpus Digital</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Platform pencatatan sistem pinjam buku secara akurat serta fasilitas untuk membaca buku secara *online*.</p>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
+                    <div class="h-56 overflow-hidden relative border-b border-slate-800">
+                        <div class="absolute inset-0 bg-darker/20 z-10"></div>
+                        <img src="https://placehold.co/800x600/1e293b/cbd5e1?text=Face+Recog" alt="Absensi CNN Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><i class="devicon-python-plain"></i> Python</span>
+                            <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><i class="ph ph-brain"></i> CNN</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Absensi & Undian (Balai Kota)</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Mengembangkan modul *Machine Learning* Face Recognition berbasis CNN untuk absensi dinas, terintegrasi dengan sistem undian berhadiah.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certifications Section -->
+    <section class="relative z-10 py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-8"><i class="ph ph-certificate"></i> Lisensi & Sertifikasi</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-6">
+                <!-- Cert Card 1 (Horizontal Layout) -->
+                <div class="flex flex-col sm:flex-row bg-darker border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-500 transition-all">
+                    <div class="w-full sm:w-1/3 h-40 sm:h-auto bg-slate-900 border-b sm:border-b-0 sm:border-r border-slate-800">
+                        <img src="https://placehold.co/400x300/1e293b/cbd5e1?text=Sertifikat+1" alt="Certificate 1" class="w-full h-full object-cover grayscale opacity-70">
+                    </div>
+                    <div class="p-6 w-full sm:w-2/3 flex flex-col justify-center">
+                        <h3 class="text-lg font-bold text-white mb-1">Backend Development Certification</h3>
+                        <p class="text-sm text-slate-400 mb-4">Dicoding Academy / Kementerian Kominfo</p>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-white/10 text-white text-xs rounded"><i class="devicon-php-plain"></i> PHP</span>
+                            <span class="px-2 py-1 bg-white/10 text-white text-xs rounded">Logic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cert Card 2 (Horizontal Layout) -->
+                <div class="flex flex-col sm:flex-row bg-darker border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-500 transition-all">
+                    <div class="w-full sm:w-1/3 h-40 sm:h-auto bg-slate-900 border-b sm:border-b-0 sm:border-r border-slate-800">
+                        <img src="https://placehold.co/400x300/1e293b/cbd5e1?text=Sertifikat+2" alt="Certificate 2" class="w-full h-full object-cover grayscale opacity-70">
+                    </div>
+                    <div class="p-6 w-full sm:w-2/3 flex flex-col justify-center">
+                        <h3 class="text-lg font-bold text-white mb-1">MTCNA Network Associate</h3>
+                        <p class="text-sm text-slate-400 mb-4">MikroTik Indonesia</p>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 bg-white/10 text-white text-xs rounded"><i class="ph ph-wifi-high"></i> Networking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="relative z-10 py-16 bg-gradient-to-b from-transparent to-darker border-t border-slate-800/50">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold text-white mb-4">Tulisan & Pemikiran</h2>
+            <p class="text-slate-400 mb-8">Saya sesekali menulis tentang *software engineering*, tutorial Laravel, dan pengalaman menyelesaikan *bug* dalam proyek riil.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="px-8 py-4 rounded-xl bg-dark border border-slate-700 text-white hover:border-white hover:bg-white/5 transition-all flex items-center justify-center gap-3 font-medium">
+                    <i class="ph-fill ph-hash text-2xl text-blue-400"></i> Baca di Hashnode
+                </a>
+                <a href="#" class="px-8 py-4 rounded-xl bg-dark border border-slate-700 text-white hover:border-white hover:bg-white/5 transition-all flex items-center justify-center gap-3 font-medium">
+                    <i class="ph-fill ph-medium-logo text-2xl"></i> Baca di Medium
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / CTA Section -->
+    <section id="contact" class="relative z-10 py-24 border-t border-slate-800/50 bg-darker">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Mari Berkolaborasi</h2>
+            <p class="text-slate-400 mb-10 text-lg">Tertarik untuk membangun sistem *backend* yang andal, atau diskusi tentang peluang kerja sama? Kotak masuk saya selalu terbuka!</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <!-- Solid White Email Button -->
+                <a href="mailto:azfaalharits25@gmail.com" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white text-darker font-bold text-lg hover:bg-silver hover:scale-105 transition-all duration-300 shadow-glow-white">
+                    <i class="ph ph-envelope-simple text-2xl"></i> Email Saya
+                </a>
+                
+                <!-- Outline LinkedIn Button -->
+                <a href="https://linkedin.com/in/atyla-azfa-al-harits" target="_blank" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full border border-slate-600 bg-dark text-white font-bold text-lg hover:border-white hover:bg-white/5 transition-all duration-300">
+                    <i class="ph ph-linkedin-logo text-2xl"></i> LinkedIn
+                </a>
+            </div>
+            
+            <!-- Quick Info Text -->
+            <div class="mt-12 text-slate-500 text-sm flex justify-center gap-4">
+                <span><i class="ph ph-phone"></i> +62 812 9889 7305</span>
+                <span>•</span>
+                <span><i class="ph ph-map-pin"></i> Ciamis, ID</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-slate-800 bg-dark py-8 text-center">
+        <p class="text-slate-500 text-sm font-medium">
+            &copy; 2026 Atyla Azfa Al Harits. Seluruh Hak Cipta.
+        </p>
+    </footer>
+
+    <!-- JS for Navbar scroll effect -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg', 'shadow-black/20');
+            } else {
+                nav.classList.remove('shadow-lg', 'shadow-black/20');
+            }
+        });
+    </script>
+</body>
+</html>
