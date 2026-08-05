@@ -15,11 +15,7 @@ const { t } = useI18n()
         
         <!-- Project 1 -->
         <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
-          <div class="h-56 overflow-hidden relative border-b border-slate-800">
-            <div class="absolute inset-0 bg-darker/20 z-10"></div>
-            <img src="https://placehold.co/800x600/1e293b/cbd5e1?text=SIMPUS" alt="SIMPUS Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
-          </div>
-          <div class="p-6">
+          <div class="p-8">
             <div class="flex flex-wrap gap-2 mb-4">
               <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:laravel" class="inline-block" /> Laravel</span>
               <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:mysql" class="inline-block" /> MySQL</span>
@@ -31,11 +27,7 @@ const { t } = useI18n()
 
         <!-- Project 2 -->
         <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
-          <div class="h-56 overflow-hidden relative border-b border-slate-800">
-            <div class="absolute inset-0 bg-darker/20 z-10"></div>
-            <img src="https://placehold.co/800x600/1e293b/cbd5e1?text=SITUGAS" alt="SITUGAS Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
-          </div>
-          <div class="p-6">
+          <div class="p-8">
             <div class="flex flex-wrap gap-2 mb-4">
               <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:php" class="inline-block" /> PHP</span>
               <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:mysql" class="inline-block" /> SQL</span>
@@ -47,11 +39,7 @@ const { t } = useI18n()
         
         <!-- Project 3 -->
         <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
-          <div class="h-56 overflow-hidden relative border-b border-slate-800">
-            <div class="absolute inset-0 bg-darker/20 z-10"></div>
-            <img src="https://placehold.co/800x600/1e293b/cbd5e1?text=Perpus+Digital" alt="Perpus Digital Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
-          </div>
-          <div class="p-6">
+          <div class="p-8">
             <div class="flex flex-wrap gap-2 mb-4">
               <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:laravel" class="inline-block" /> Laravel</span>
             </div>
@@ -62,11 +50,7 @@ const { t } = useI18n()
         
         <!-- Project 4 -->
         <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
-          <div class="h-56 overflow-hidden relative border-b border-slate-800">
-            <div class="absolute inset-0 bg-darker/20 z-10"></div>
-            <img src="https://placehold.co/800x600/1e293b/cbd5e1?text=Face+Recog" alt="Absensi CNN Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0">
-          </div>
-          <div class="p-6">
+          <div class="p-8">
             <div class="flex flex-wrap gap-2 mb-4">
               <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:python" class="inline-block" /> Python</span>
               <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="ph:brain" class="inline-block" /> CNN</span>
