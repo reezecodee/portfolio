@@ -35,7 +35,7 @@ const openModal = (src: string) => {
             <p class="text-sm text-slate-400 mb-1">{{ t('cert.cert_1_date') }}</p>
             <p class="text-sm text-slate-500 mb-4">{{ t('cert.cert_1_id') }}</p>
             <div class="flex gap-2">
-              <span class="px-3 py-1 bg-white/10 text-white text-sm rounded flex items-center gap-2"><Icon icon="devicon-plain:azuresqldatabase" class="text-lg" /> SQL</span>
+              <span class="px-3 py-1 bg-white/10 text-white text-sm rounded flex items-center gap-2"><img src="/icons/mysql.svg" alt="SQL" class="w-4 h-4" /> SQL</span>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ const openModal = (src: string) => {
             <p class="text-xs text-slate-400 mb-1">{{ t('cert.cert_2_date') }}</p>
             <p class="text-xs text-slate-500 mb-4">{{ t('cert.cert_2_id') }}</p>
             <div class="flex gap-2">
-              <span class="px-2 py-1 bg-white/10 text-white text-xs rounded flex items-center gap-1"><Icon icon="devicon-plain:typescript" class="text-base" /> TypeScript</span>
+              <span class="px-2 py-1 bg-white/10 text-white text-xs rounded flex items-center gap-1"><img src="/icons/typescript.svg" alt="TypeScript" class="w-3.5 h-3.5" /> TypeScript</span>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@ const openModal = (src: string) => {
             <p class="text-xs text-slate-400 mb-1">{{ t('cert.cert_3_date') }}</p>
             <p class="text-xs text-slate-500 mb-4">{{ t('cert.cert_3_id') }}</p>
             <div class="flex gap-2">
-              <span class="px-2 py-1 bg-white/10 text-white text-xs rounded flex items-center gap-1"><Icon icon="devicon-plain:azuresqldatabase" class="text-base" /> SQL</span>
+              <span class="px-2 py-1 bg-white/10 text-white text-xs rounded flex items-center gap-1"><img src="/icons/mysql.svg" alt="SQL" class="w-3.5 h-3.5" /> SQL</span>
             </div>
           </div>
         </div>
