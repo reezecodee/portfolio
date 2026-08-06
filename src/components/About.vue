@@ -39,10 +39,10 @@ const { t } = useI18n()
           <div>
             <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">{{ t('about.skills.languages') }}</h4>
             <div class="flex flex-wrap gap-3">
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:php" class="text-lg" /> PHP</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:python" class="text-lg" /> Python</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:dart" class="text-lg" /> Dart</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:typescript" class="text-lg" /> TypeScript</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/php.svg" alt="PHP" class="w-5 h-5 invert" /> PHP</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/python.svg" alt="Python" class="w-5 h-5" /> Python</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/dart.svg" alt="Dart" class="w-5 h-5" /> Dart</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/typescript.svg" alt="TypeScript" class="w-5 h-5" /> TypeScript</span>
             </div>
           </div>
           
@@ -50,9 +50,9 @@ const { t } = useI18n()
           <div>
             <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">{{ t('about.skills.frameworks') }}</h4>
             <div class="flex flex-wrap gap-3">
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:laravel" class="text-lg" /> Laravel</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:vuejs" class="text-lg" /> Vue.js</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:flutter" class="text-lg" /> Flutter</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/laravel.svg" alt="Laravel" class="w-5 h-5" /> Laravel</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/vue.svg" alt="Vue.js" class="w-5 h-5" /> Vue.js</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/flutter.svg" alt="Flutter" class="w-5 h-5" /> Flutter</span>
             </div>
           </div>
 
@@ -60,8 +60,8 @@ const { t } = useI18n()
           <div>
             <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">{{ t('about.skills.database') }}</h4>
             <div class="flex flex-wrap gap-3">
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:mysql" class="text-lg" /> MySQL</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:postgresql" class="text-lg" /> PostgreSQL</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/mysql.svg" alt="MySQL" class="w-5 h-5" /> MySQL</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/postgresql.svg" alt="PostgreSQL" class="w-5 h-5" /> PostgreSQL</span>
             </div>
           </div>
 
@@ -69,10 +69,9 @@ const { t } = useI18n()
           <div>
             <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">{{ t('about.skills.tools') }}</h4>
             <div class="flex flex-wrap gap-3">
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:docker" class="text-lg" /> Docker</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:git" class="text-lg" /> Git/GitHub</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="ph:cube" class="text-lg" /> Bruno</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="ph:database" class="text-lg" /> Navicat</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/docker.svg" alt="Docker" class="w-5 h-5" /> Docker</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/github.svg" alt="Git/GitHub" class="w-5 h-5 invert" /> Git/GitHub</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/cloudflare.svg" alt="Cloudflare" class="w-5 h-5" /> Cloudflare</span>
             </div>
           </div>
 
@@ -80,8 +79,8 @@ const { t } = useI18n()
           <div>
             <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">{{ t('about.skills.ide') }}</h4>
             <div class="flex flex-wrap gap-3">
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:vscode" class="text-lg" /> VS Code</span>
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="ph:rocket" class="text-lg" /> Antigravity</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/vscode.svg" alt="VS Code" class="w-5 h-5" /> VS Code</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/antigravity.svg" alt="Antigravity" class="w-5 h-5" /> Antigravity</span>
             </div>
           </div>
 
@@ -89,7 +88,7 @@ const { t } = useI18n()
           <div>
             <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">{{ t('about.skills.os') }}</h4>
             <div class="flex flex-wrap gap-3">
-              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:windows8" class="text-lg" /> Windows</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><img src="/icons/windows.svg" alt="Windows" class="w-5 h-5" /> Windows</span>
             </div>
           </div>
         </div>
