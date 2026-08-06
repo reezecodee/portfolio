@@ -27,7 +27,9 @@
       "languages": "Bahasa Pemrograman",
       "frameworks": "Framework & Library",
       "database": "Database",
-      "tools": "Tools & Infrastructure"
+      "tools": "Tools & Infrastructure",
+      "ide": "IDE",
+      "os": "Sistem Operasi"
     },
     "languages_title": "Bahasa",
     "languages": {

@@ -27,7 +27,9 @@
       "languages": "Programming Languages",
       "frameworks": "Frameworks & Libraries",
       "database": "Database",
-      "tools": "Tools & Infrastructure"
+      "tools": "Tools & Infrastructure",
+      "ide": "IDE",
+      "os": "Operating System"
     },
     "languages_title": "Languages",
     "languages": {

@@ -75,6 +75,23 @@ const { t } = useI18n()
               <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="ph:database" class="text-lg" /> Navicat</span>
             </div>
           </div>
+
+          <!-- Kategori 5 -->
+          <div>
+            <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">{{ t('about.skills.ide') }}</h4>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:vscode" class="text-lg" /> VS Code</span>
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="ph:rocket" class="text-lg" /> Antigravity</span>
+            </div>
+          </div>
+
+          <!-- Kategori 6 -->
+          <div>
+            <h4 class="text-sm text-slate-500 font-semibold mb-3 uppercase tracking-wider">{{ t('about.skills.os') }}</h4>
+            <div class="flex flex-wrap gap-3">
+              <span class="px-4 py-2 bg-dark border border-slate-800 rounded-lg text-sm text-slate-300 flex items-center gap-2 hover:border-white transition-colors cursor-default"><Icon icon="devicon-plain:windows8" class="text-lg" /> Windows</span>
+            </div>
+          </div>
         </div>
       </div>
 
