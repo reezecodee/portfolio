@@ -17,8 +17,8 @@ const { t } = useI18n()
         <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
           <div class="p-8">
             <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:laravel" class="inline-block" /> Laravel</span>
-              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:mysql" class="inline-block" /> MySQL</span>
+              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/laravel.svg" alt="Laravel" class="inline-block w-3.5 h-3.5 mr-1" /> Laravel</span>
+              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/mysql.svg" alt="MySQL" class="inline-block w-3.5 h-3.5 mr-1" /> MySQL</span>
             </div>
             <h3 class="text-xl font-bold text-white mb-2">{{ t('projects.proj_1_title') }}</h3>
             <p class="text-slate-400 text-sm leading-relaxed" v-html="t('projects.proj_1_desc')"></p>
@@ -29,8 +29,8 @@ const { t } = useI18n()
         <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
           <div class="p-8">
             <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:php" class="inline-block" /> PHP</span>
-              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:mysql" class="inline-block" /> SQL</span>
+              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/php.svg" alt="PHP" class="inline-block w-3.5 h-3.5 mr-1 invert dark:invert-0" /> PHP</span>
+              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/mysql.svg" alt="SQL" class="inline-block w-3.5 h-3.5 mr-1" /> SQL</span>
             </div>
             <h3 class="text-xl font-bold text-white mb-2">{{ t('projects.proj_2_title') }}</h3>
             <p class="text-slate-400 text-sm leading-relaxed" v-html="t('projects.proj_2_desc')"></p>
@@ -41,7 +41,7 @@ const { t } = useI18n()
         <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
           <div class="p-8">
             <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:laravel" class="inline-block" /> Laravel</span>
+              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/laravel.svg" alt="Laravel" class="inline-block w-3.5 h-3.5 mr-1" /> Laravel</span>
             </div>
             <h3 class="text-xl font-bold text-white mb-2">{{ t('projects.proj_3_title') }}</h3>
             <p class="text-slate-400 text-sm leading-relaxed" v-html="t('projects.proj_3_desc')"></p>
@@ -52,8 +52,8 @@ const { t } = useI18n()
         <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
           <div class="p-8">
             <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="devicon-plain:python" class="inline-block" /> Python</span>
-              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><Icon icon="ph:brain" class="inline-block" /> CNN</span>
+              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/laravel.svg" alt="Laravel" class="inline-block w-3.5 h-3.5 mr-1" /> Laravel</span>
+              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/livewire.svg" alt="Livewire" class="inline-block w-3.5 h-3.5 mr-1" /> Livewire</span>
             </div>
             <h3 class="text-xl font-bold text-white mb-2">{{ t('projects.proj_4_title') }}</h3>
             <p class="text-slate-400 text-sm leading-relaxed" v-html="t('projects.proj_4_desc')"></p>
