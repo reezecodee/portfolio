@@ -13,7 +13,7 @@ const { t } = useI18n()
       
       <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a href="https://azuvicenna.hashnode.dev/" target="_blank" class="px-8 py-4 rounded-xl bg-dark border border-slate-700 text-white hover:border-white hover:bg-white/5 transition-all flex items-center justify-center gap-3 font-medium">
-          <Icon icon="ph:hash-fill" class="text-2xl text-blue-400" /> {{ t('blog.hashnode') }}
+          <img src="/icons/hashnode.svg" alt="Hashnode" class="w-6 h-6" /> {{ t('blog.hashnode') }}
         </a>
         <a href="https://medium.com/@azuvicenna" target="_blank" class="px-8 py-4 rounded-xl bg-dark border border-slate-700 text-white hover:border-white hover:bg-white/5 transition-all flex items-center justify-center gap-3 font-medium">
           <Icon icon="ph:medium-logo-fill" class="text-2xl" /> {{ t('blog.medium') }}

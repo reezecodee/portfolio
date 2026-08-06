@@ -28,7 +28,7 @@ const { t } = useI18n()
         <div class="group relative bg-darker rounded-2xl border border-slate-800 overflow-hidden hover:border-white/40 hover:shadow-glow-white transition-all duration-500">
           <div class="p-8">
             <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/php.svg" alt="PHP" class="inline-block w-3.5 h-3.5 mr-1 invert dark:invert-0" /> PHP</span>
+              <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/php.svg" alt="PHP" class="inline-block w-3.5 h-3.5 mr-1 invert" /> PHP</span>
               <span class="px-2 py-1 text-xs font-medium bg-white/5 text-slate-300 rounded border border-slate-700"><img src="/icons/mysql.svg" alt="SQL" class="inline-block w-3.5 h-3.5 mr-1" /> SQL</span>
             </div>
             <h3 class="text-xl font-bold text-white mb-2">{{ t('projects.proj_2_title') }}</h3>
