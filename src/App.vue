@@ -5,7 +5,6 @@ import About from './components/About.vue'
 import Resume from './components/Resume.vue'
 import Projects from './components/Projects.vue'
 import Certifications from './components/Certifications.vue'
-import Blog from './components/Blog.vue'
 import Contact from './components/Contact.vue'
 import Footer from './components/Footer.vue'
 </script>
@@ -18,7 +17,6 @@ import Footer from './components/Footer.vue'
     <Resume />
     <Projects />
     <Certifications />
-    <Blog />
     <Contact />
   </main>
   <Footer />

@@ -5,7 +5,6 @@
     "about": "About",
     "resume": "Resume",
     "portfolio": "Portfolio",
-    "blog": "Blog",
     "contact": "Let's Talk"
   },
   "hero": {
@@ -85,12 +84,6 @@
     "cert_3_org": "Digital Talent Scholarship",
     "cert_3_date": "Issued Feb 2024",
     "cert_3_id": "Credential ID 2007340840-230/TSA/BLSDM.Kominfo/2024"
-  },
-  "blog": {
-    "title": "Writings & Thoughts",
-    "desc": "I occasionally write about software engineering, Laravel tutorials, and experiences solving bugs in real projects.",
-    "hashnode": "Read on Hashnode",
-    "medium": "Read on Medium"
   },
   "contact": {
     "title": "Let's Collaborate",

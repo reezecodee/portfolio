@@ -5,7 +5,6 @@
     "about": "About",
     "resume": "Resume",
     "portfolio": "Portfolio",
-    "blog": "Blog",
     "contact": "Let's Talk"
   },
   "hero": {
@@ -85,12 +84,6 @@
     "cert_3_org": "Digital Talent Scholarship",
     "cert_3_date": "Diterbitkan Feb 2024",
     "cert_3_id": "Credential ID 2007340840-230/TSA/BLSDM.Kominfo/2024"
-  },
-  "blog": {
-    "title": "Tulisan & Pemikiran",
-    "desc": "Saya sesekali menulis tentang software engineering, tutorial Laravel, dan pengalaman menyelesaikan bug dalam proyek riil.",
-    "hashnode": "Baca di Hashnode",
-    "medium": "Baca di Medium"
   },
   "contact": {
     "title": "Mari Berkolaborasi",
