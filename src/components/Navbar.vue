@@ -36,7 +36,7 @@ onMounted(() => {
   }, options)
   
   // Observe sections
-  const sections = ['home', 'about', 'resume', 'portfolio', 'blog', 'contact']
+  const sections = ['home', 'about', 'resume', 'portfolio', 'contact']
   setTimeout(() => {
     sections.forEach(id => {
       const el = document.getElementById(id)
@@ -64,7 +64,6 @@ onUnmounted(() => {
         <router-link :to="{ hash: '#about' }" :class="['transition-colors duration-300', activeSection === 'about' ? 'text-white font-bold' : 'text-slate-400 hover:text-white']">{{ t('navbar.about') }}</router-link>
         <router-link :to="{ hash: '#resume' }" :class="['transition-colors duration-300', activeSection === 'resume' ? 'text-white font-bold' : 'text-slate-400 hover:text-white']">{{ t('navbar.resume') }}</router-link>
         <router-link :to="{ hash: '#portfolio' }" :class="['transition-colors duration-300', activeSection === 'portfolio' ? 'text-white font-bold' : 'text-slate-400 hover:text-white']">{{ t('navbar.portfolio') }}</router-link>
-        <router-link :to="{ hash: '#blog' }" :class="['transition-colors duration-300', activeSection === 'blog' ? 'text-white font-bold' : 'text-slate-400 hover:text-white']">{{ t('navbar.blog') }}</router-link>
         
         <!-- Language Toggle -->
         <button @click="toggleLanguage" class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors duration-300 uppercase font-bold" title="Toggle Language">
@@ -88,7 +87,6 @@ onUnmounted(() => {
       <router-link :to="{ hash: '#about' }" :class="['block py-2 hover:text-white', activeSection === 'about' ? 'text-white font-bold bg-white/5 rounded-lg' : 'text-slate-300']" @click="isMobileMenuOpen = false">{{ t('navbar.about') }}</router-link>
       <router-link :to="{ hash: '#resume' }" :class="['block py-2 hover:text-white', activeSection === 'resume' ? 'text-white font-bold bg-white/5 rounded-lg' : 'text-slate-300']" @click="isMobileMenuOpen = false">{{ t('navbar.resume') }}</router-link>
       <router-link :to="{ hash: '#portfolio' }" :class="['block py-2 hover:text-white', activeSection === 'portfolio' ? 'text-white font-bold bg-white/5 rounded-lg' : 'text-slate-300']" @click="isMobileMenuOpen = false">{{ t('navbar.portfolio') }}</router-link>
-      <router-link :to="{ hash: '#blog' }" :class="['block py-2 hover:text-white', activeSection === 'blog' ? 'text-white font-bold bg-white/5 rounded-lg' : 'text-slate-300']" @click="isMobileMenuOpen = false">{{ t('navbar.blog') }}</router-link>
       <button @click="toggleLanguage" class="block py-2 text-slate-300 hover:text-white flex items-center justify-center gap-2 uppercase font-bold w-full">
         <Icon icon="ph:translate" class="text-lg" /> {{ locale === 'id' ? 'English' : 'Indonesia' }}
       </button>
